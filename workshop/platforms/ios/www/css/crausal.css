@@ -1,0 +1,193 @@
+@CHARSET "ISO-8859-1";
+
+
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        
+        .jssorb05 {
+            position: absolute;
+        }
+        
+        .jssorb05 div,
+        .jssorb05 div:hover,
+        .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 15px;
+            height: 15px;
+            background-color: black;
+            background-color: rgba(0, 0, 0, 0.16);
+            border: 1px solid rgba(225, 225, 225, 0.87);
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .jssorb05 div {
+            background-position: -7px -7px;
+        }
+        
+        .jssorb05 div:hover,
+        .jssorb05
+        /*.av:hover*/
+        
+        {
+            background-position: -37px -7px;
+        }
+        
+        .jssorb05 .av {
+            background-color: white;
+        }
+        
+        .jssorb05 .dn,
+        .jssorb05 .dn:hover {
+            background-position: -97px -7px;
+        }
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+        
+        .jssora22l,
+        .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        
+        .jssora22l {
+            background-position: -10px -31px;
+        }
+        
+        .jssora22r {
+            background-position: -70px -31px;
+        }
+        
+        .jssora22l:hover {
+            background-position: -130px -31px;
+        }
+        
+        .jssora22r:hover {
+            background-position: -190px -31px;
+        }
+        
+        .jssora22l.jssora22ldn {
+            background-position: -250px -31px;
+        }
+        
+        .jssora22r.jssora22rdn {
+            background-position: -310px -31px;
+        }
+  
+   .ui-carousel {
+            list-style: none outside none;
+            /* margin: 0 auto; */
+            /* padding: 0; */
+            position: fixed;
+            text-align: center;
+            width: 100%;
+            /* height: 100%; */
+            min-height: 700px;
+            overflow: hidden;
+            /*  outline: 0; */
+        }
+        
+        .ui-carousel li {
+            -webkit-border-radius: inherit;
+            -moz-border-radius: inherit;
+            border-radius: inherit;
+            display: none;
+            list-style: none outside none;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+        }
+        
+        .ui-carousel-inset {
+            /*  margin: 0em auto; */
+            -webkit-border-radius: 0em;
+            -moz-border-radius: 0em;
+            border-radius: 0em;
+        }
+        
+        .ui-carousel li.ui-carousel-transitioning {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .ui-carousel li.ui-carousel-active {
+            display: block;
+        }
+        /*   .ui-carousel li a {
+            -webkit-border-radius: inherit;
+            -moz-border-radius: inherit;
+            border-radius: inherit;
+            overflow: inherit;
+        } */
+        
+        .ui-carousel img {
+            position:fixed;
+            width:430px;
+            display: block;
+            -webkit-border-radius: inherit;
+            -moz-border-radius: inherit;
+            border-radius: inherit;
+            min-height:700px;
+        }
+        
+        .ui-carousel-controls {
+            position: absolute;
+            padding-top: 2%;
+            padding-left: 35%;
+        }
+        
+        .ui-carousel-controls .ui-radio {
+            display: inline-block;
+            padding: 0 .25em;
+        }
+        
+        .ui-carousel-controls .ui-radio label:after {
+            left: .2em;
+        }
+        /* .ui-radio{
+         display:none;
+         } */
+        
+        .ui-carousel-captions .ui-carousel-captions-heading {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .ui-carousel-captions-content {
+            left: 0;
+            margin: 0;
+            position: absolute;
+            right: 0;
+        }
+        
+        .ui-carousel-captions-top {
+            top: 0;
+        }
+        
+        .ctext {
+            position: absolute;
+            padding-top: 110%;
+            color: white;
+        }

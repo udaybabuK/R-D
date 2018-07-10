@@ -1,0 +1,117 @@
+
+
+
+
+
+
+
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <meta http-equiv="Pragma" content="no-cache">
+                        <meta http-equiv="Cache-Control" content="no-cache">
+                            <meta http-equiv="Expires" content="0">
+                                <title>Login</title>
+                                <link rel="icon" href="/resources/images/favicon.ico" type="image/x-icon">
+                                    <link href="/resources/css/normalize.css" rel="stylesheet">
+                                        <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
+                                            <link href="/resources/css/style-mobile.css" rel="stylesheet">
+                                                
+                                                <script type="text/javascript" src="/resources/js/jquery-3.1.1.min.js"></script>
+                                                <script type="text/javascript" src="/resources/js/jquery-ui.min.1.12.1.js"></script>
+                                                <script type="text/javascript" src="/resources/js/bootstrap.min.js"></script>
+                                                <script type="text/javascript" src="/resources/js/bootbox.min.js"></script>
+                                                <script type="text/javascript" src="/resources/js/jquery.validate.min.js"></script>
+                                                
+    </head>
+    
+    <body>
+        <section class="bg-section bg-section-full" style="background-image: url(/resources/images/mobile-background.jpg)">
+            <div class="bg-overlay" style="opacity: 0.8; background-color: rgb(94, 96, 116);"></div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="login-bg col-lg-4 col-md-4 col-xs-10 col-sm-10 col-lg-offset-4 col-md-offset-4 col-xs-offset-1 col-sm-offset-1">
+                        <form id="mobLogin" action="/login/mobile/auth" method="post">
+                            <input type="hidden" name="latlon" id="latlon" value="NA,NA">
+                                <div class="row" style="padding-bottom: 15px;">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                        <img src="/resources/images/logo.png">
+                                            </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <label class="control-label">Account Id<span style="color: red;">*</span></label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                                <input id="accountId" name="accountId" class="text_field form-control required" placeholder="Account Id" type="text" value="" maxlength="5"/>
+                                            </div>
+                                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <label class="control-label">Login Id<span style="color: red;">*</span></label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                                <input id="userName" name="userName" class="text_field form-control required" placeholder="Login Id" type="text" value="" maxlength="20"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row" style="padding-bottom: 15px;">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <label class="control-label">Password<span style="color: red;">*</span></label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><span class="glyphicon glyphicon-cog"></span></span>
+                                                <input id="password" name="password" class="text_field form-control required" placeholder="Password" type="password" value="" maxlength="30"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                        <button type="Submit" class="btn btn-primary btn-submit">Login</button>
+                                    </div>
+                                </div>
+                                
+                                <p style="color: red; margin-left: 154px; font-size: 16px;"></p>
+                                
+                                </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="container">
+                <p class="text-center">© 2017 Orient Technologies Private Ltd.</p>
+            </div>
+        </footer>
+        <script>
+            $(document).ready(function(){
+                              $("#mobLogin").validate({
+                                                      rules: {
+                                                      accountId: {number: true, required: true},
+                                                      userName: {required: true},
+                                                      password:{required:true}
+                                                      }
+                                                      });
+                              
+                              });
+            </script>
+    </body>
+</html>
+

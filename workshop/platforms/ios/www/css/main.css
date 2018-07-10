@@ -1,0 +1,68 @@
+/* Swipe works with mouse as well but often causes text selection. */
+#demo-page * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+/* Arrow only buttons in the header. */
+#demo-page .ui-header .ui-btn {
+    background: none;
+    border: none;
+    top: 9px;
+}
+#demo-page .ui-header .ui-btn-inner {
+    border: none;
+}
+/* Content styling. */
+dl { font-family: "Times New Roman", Times, serif; padding: 1em; }
+dt { font-size: 2em; font-weight: bold; }
+dt span { font-size: .5em; color: #777; margin-left: .5em; }
+dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px solid #eee; }
+.back-btn { float: right; margin: 0 2em 1em 0; }
+
+a,p,h1,h2,h3,h4,h5,h6,span{
+	text-shadow:none;
+}
+div.ui-slider-switch.ui-mini{
+	
+	 width: 3.5em;
+    height: 29px;
+    margin: .25em 0;
+    top: 0;
+    border: none;
+    
+}
+.ui-btn-active{
+	background-color:#76D8B4 !important;
+	background-image:none;
+}
+.ui-body-c, .ui-overlay-c {
+    border: 1px solid #aaa;
+    color: #333;
+  text-shadow: none;
+}
+
+ @font-face {
+    font-family:"Helvetica Neue";
+    src:url("Fonts/HelveticaNeue-Regular.otf");
+}
+@font-face {
+    font-family:"HelveticaNeue-Thin";
+    src:url("Fonts/HelveticaNeue-Thin.ttf");
+}
+
+@font-face {
+    font-family:"Helvetica Neue Light";
+    src:url("Fonts/HelveticaNeue-Light.otf");
+}
+@font-face {
+    font-family:"Helvetica Neue";
+    src:url("Fonts/HelveticaNeue-Bold.otf");
+}
+@font-face {
+    font-family:"Helvetica Neue Bold";
+    src:url("Fonts/HelveticaNeue-BoldCond.otf");
+}
+

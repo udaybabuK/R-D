@@ -1,0 +1,881 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AB94FF2C21F53C4BBCFA32E /* Pods_IndiaSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EBFECF6AB42FBF919D7813 /* Pods_IndiaSwiftTests.framework */; };
+		5838360EEB0FFA015653E3D1 /* Pods_IndiaSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7211E401F88B8E858ADB797B /* Pods_IndiaSwiftUITests.framework */; };
+		8B2B6D801046E26A1E4F631B /* Pods_IndiaSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6937CFDDBE52FBEA7D347 /* Pods_IndiaSwift.framework */; };
+		F8091F5020C7E938000E81D0 /* CastUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8091F4F20C7E938000E81D0 /* CastUUID.swift */; };
+		F81824A820C9032400FBF001 /* ColorPickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F81824A520C9032400FBF001 /* ColorPickerTextField.m */; };
+		F81824A920C9032400FBF001 /* UIColor+HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = F81824A720C9032400FBF001 /* UIColor+HexColors.m */; };
+		F81824AE20C9059E00FBF001 /* HFColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F81824AB20C9059E00FBF001 /* HFColorButton.m */; };
+		F81824AF20C9059E00FBF001 /* HFColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F81824AD20C9059E00FBF001 /* HFColorPickerView.m */; };
+		F866E68D20D0DE92007A2360 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866E68C20D0DE92007A2360 /* Settings.swift */; };
+		F8D8087820C664B90007C6E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D8087720C664B90007C6E7 /* AppDelegate.swift */; };
+		F8D8087A20C664B90007C6E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D8087920C664B90007C6E7 /* ViewController.swift */; };
+		F8D8087D20C664B90007C6E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D8087B20C664B90007C6E7 /* Main.storyboard */; };
+		F8D8087F20C664B90007C6E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D8087E20C664B90007C6E7 /* Assets.xcassets */; };
+		F8D8088220C664B90007C6E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D8088020C664B90007C6E7 /* LaunchScreen.storyboard */; };
+		F8D8088D20C664BA0007C6E7 /* IndiaSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D8088C20C664BA0007C6E7 /* IndiaSwiftTests.swift */; };
+		F8D8089820C664BA0007C6E7 /* IndiaSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D8089720C664BA0007C6E7 /* IndiaSwiftUITests.swift */; };
+		F8D808F120C682EC0007C6E7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D808EC20C682EC0007C6E7 /* SwiftyJSON.swift */; };
+		F8D808F220C682EC0007C6E7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D808ED20C682EC0007C6E7 /* Constant.swift */; };
+		F8D808F320C682EC0007C6E7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D808EE20C682EC0007C6E7 /* Helper.swift */; };
+		F8D808F420C682EC0007C6E7 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D808EF20C682EC0007C6E7 /* Reachability.swift */; };
+		F8D808F520C682EC0007C6E7 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D808F020C682EC0007C6E7 /* JsonHelper.swift */; };
+		F8D808FE20C68CFB0007C6E7 /* bg-image.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D808FD20C68CFB0007C6E7 /* bg-image.png */; };
+		F8D8090020C68DD00007C6E7 /* ios-ic-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D808FF20C68DD00007C6E7 /* ios-ic-logo.png */; };
+		F8D8090220C69CAD0007C6E7 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D8090120C69CAD0007C6E7 /* Login.swift */; };
+		F8D8090420C69FBE0007C6E7 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D8090320C69FBE0007C6E7 /* UIHelper.swift */; };
+		F8F6272A20C9304200EEF51D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F6272120C9304200EEF51D /* FMDatabase.m */; };
+		F8F6272B20C9304200EEF51D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F6272320C9304200EEF51D /* FMResultSet.m */; };
+		F8F6272C20C9304200EEF51D /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F6272520C9304200EEF51D /* FMDatabaseQueue.m */; };
+		F8F6272D20C9304200EEF51D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F6272720C9304200EEF51D /* FMDatabaseAdditions.m */; };
+		F8F6272E20C9304200EEF51D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F6272920C9304200EEF51D /* FMDatabasePool.m */; };
+		F8F6273020C9308C00EEF51D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F6272F20C9308C00EEF51D /* libsqlite3.tbd */; };
+		F8F6273320C9310500EEF51D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6273120C9310500EEF51D /* Util.swift */; };
+		F8F6273420C9310500EEF51D /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6273220C9310500EEF51D /* ModelManager.swift */; };
+		F8F6273620C9364C00EEF51D /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6273520C9364C00EEF51D /* LoginResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8D8088920C664BA0007C6E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8D8086C20C664B90007C6E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8D8087320C664B90007C6E7;
+			remoteInfo = IndiaSwift;
+		};
+		F8D8089420C664BA0007C6E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8D8086C20C664B90007C6E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8D8087320C664B90007C6E7;
+			remoteInfo = IndiaSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07B6937CFDDBE52FBEA7D347 /* Pods_IndiaSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IndiaSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B15ADDBFCFD11E2D55D2411 /* Pods-IndiaSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndiaSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IndiaSwift/Pods-IndiaSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		7211E401F88B8E858ADB797B /* Pods_IndiaSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IndiaSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2EBFECF6AB42FBF919D7813 /* Pods_IndiaSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IndiaSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1531439922D3D5A5522E28 /* Pods-IndiaSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndiaSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-IndiaSwift/Pods-IndiaSwift.release.xcconfig"; sourceTree = "<group>"; };
+		DAAC34229A4DC6C3EB413295 /* Pods-IndiaSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndiaSwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IndiaSwiftUITests/Pods-IndiaSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E2A1E7375BAF2C5BBA83CB9D /* Pods-IndiaSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndiaSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IndiaSwiftTests/Pods-IndiaSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		F8091F4F20C7E938000E81D0 /* CastUUID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastUUID.swift; sourceTree = "<group>"; };
+		F81824A320C9032300FBF001 /* IndiaSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IndiaSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		F81824A420C9032400FBF001 /* ColorPickerTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerTextField.h; sourceTree = "<group>"; };
+		F81824A520C9032400FBF001 /* ColorPickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerTextField.m; sourceTree = "<group>"; };
+		F81824A620C9032400FBF001 /* UIColor+HexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColors.h"; sourceTree = "<group>"; };
+		F81824A720C9032400FBF001 /* UIColor+HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColors.m"; sourceTree = "<group>"; };
+		F81824AA20C9059E00FBF001 /* HFColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFColorButton.h; sourceTree = "<group>"; };
+		F81824AB20C9059E00FBF001 /* HFColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFColorButton.m; sourceTree = "<group>"; };
+		F81824AC20C9059E00FBF001 /* HFColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFColorPickerView.h; sourceTree = "<group>"; };
+		F81824AD20C9059E00FBF001 /* HFColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFColorPickerView.m; sourceTree = "<group>"; };
+		F866E68C20D0DE92007A2360 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		F8D8087420C664B90007C6E7 /* IndiaSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndiaSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D8087720C664B90007C6E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8D8087920C664B90007C6E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8D8087C20C664B90007C6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8D8087E20C664B90007C6E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8D8088120C664B90007C6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8D8088320C664B90007C6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D8088820C664BA0007C6E7 /* IndiaSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndiaSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D8088C20C664BA0007C6E7 /* IndiaSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndiaSwiftTests.swift; sourceTree = "<group>"; };
+		F8D8088E20C664BA0007C6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D8089320C664BA0007C6E7 /* IndiaSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndiaSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D8089720C664BA0007C6E7 /* IndiaSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndiaSwiftUITests.swift; sourceTree = "<group>"; };
+		F8D8089920C664BA0007C6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D808EC20C682EC0007C6E7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		F8D808ED20C682EC0007C6E7 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		F8D808EE20C682EC0007C6E7 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		F8D808EF20C682EC0007C6E7 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F8D808F020C682EC0007C6E7 /* JsonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		F8D808FD20C68CFB0007C6E7 /* bg-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-image.png"; sourceTree = "<group>"; };
+		F8D808FF20C68DD00007C6E7 /* ios-ic-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios-ic-logo.png"; sourceTree = "<group>"; };
+		F8D8090120C69CAD0007C6E7 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		F8D8090320C69FBE0007C6E7 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		F8F6271F20C9304200EEF51D /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		F8F6272020C9304200EEF51D /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		F8F6272120C9304200EEF51D /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		F8F6272220C9304200EEF51D /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		F8F6272320C9304200EEF51D /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		F8F6272420C9304200EEF51D /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		F8F6272520C9304200EEF51D /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		F8F6272620C9304200EEF51D /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		F8F6272720C9304200EEF51D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		F8F6272820C9304200EEF51D /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		F8F6272920C9304200EEF51D /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		F8F6272F20C9308C00EEF51D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F8F6273120C9310500EEF51D /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		F8F6273220C9310500EEF51D /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		F8F6273520C9364C00EEF51D /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		FADA6A63225CCD84E4F0A9F7 /* Pods-IndiaSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndiaSwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IndiaSwiftUITests/Pods-IndiaSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCD6ECFDE0E41299A7A4FAB1 /* Pods-IndiaSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndiaSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IndiaSwiftTests/Pods-IndiaSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8D8087120C664B90007C6E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F6273020C9308C00EEF51D /* libsqlite3.tbd in Frameworks */,
+				8B2B6D801046E26A1E4F631B /* Pods_IndiaSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D8088520C664BA0007C6E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AB94FF2C21F53C4BBCFA32E /* Pods_IndiaSwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D8089020C664BA0007C6E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5838360EEB0FFA015653E3D1 /* Pods_IndiaSwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5B234CF19FDC256F3F22024 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8F6272F20C9308C00EEF51D /* libsqlite3.tbd */,
+				07B6937CFDDBE52FBEA7D347 /* Pods_IndiaSwift.framework */,
+				A2EBFECF6AB42FBF919D7813 /* Pods_IndiaSwiftTests.framework */,
+				7211E401F88B8E858ADB797B /* Pods_IndiaSwiftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D63BB05381C1973D01A96533 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B15ADDBFCFD11E2D55D2411 /* Pods-IndiaSwift.debug.xcconfig */,
+				AA1531439922D3D5A5522E28 /* Pods-IndiaSwift.release.xcconfig */,
+				FCD6ECFDE0E41299A7A4FAB1 /* Pods-IndiaSwiftTests.debug.xcconfig */,
+				E2A1E7375BAF2C5BBA83CB9D /* Pods-IndiaSwiftTests.release.xcconfig */,
+				FADA6A63225CCD84E4F0A9F7 /* Pods-IndiaSwiftUITests.debug.xcconfig */,
+				DAAC34229A4DC6C3EB413295 /* Pods-IndiaSwiftUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F81824A220C902DA00FBF001 /* Third party */ = {
+			isa = PBXGroup;
+			children = (
+				F81824A420C9032400FBF001 /* ColorPickerTextField.h */,
+				F81824A520C9032400FBF001 /* ColorPickerTextField.m */,
+				F81824A620C9032400FBF001 /* UIColor+HexColors.h */,
+				F81824A720C9032400FBF001 /* UIColor+HexColors.m */,
+				F81824AA20C9059E00FBF001 /* HFColorButton.h */,
+				F81824AB20C9059E00FBF001 /* HFColorButton.m */,
+				F81824AC20C9059E00FBF001 /* HFColorPickerView.h */,
+				F81824AD20C9059E00FBF001 /* HFColorPickerView.m */,
+			);
+			name = "Third party";
+			sourceTree = "<group>";
+		};
+		F8D8086B20C664B90007C6E7 = {
+			isa = PBXGroup;
+			children = (
+				F8D8088B20C664BA0007C6E7 /* IndiaSwiftTests */,
+				F8D8087620C664B90007C6E7 /* IndiaSwift */,
+				F8D8089620C664BA0007C6E7 /* IndiaSwiftUITests */,
+				F8D8087520C664B90007C6E7 /* Products */,
+				D63BB05381C1973D01A96533 /* Pods */,
+				C5B234CF19FDC256F3F22024 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F8D8087520C664B90007C6E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8D8087420C664B90007C6E7 /* IndiaSwift.app */,
+				F8D8088820C664BA0007C6E7 /* IndiaSwiftTests.xctest */,
+				F8D8089320C664BA0007C6E7 /* IndiaSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8D8087620C664B90007C6E7 /* IndiaSwift */ = {
+			isa = PBXGroup;
+			children = (
+				F8D808F620C684E50007C6E7 /* Resorces */,
+				F8D808A620C668180007C6E7 /* Controllers */,
+				F8D808EB20C682C20007C6E7 /* Utilits */,
+				F8D8087720C664B90007C6E7 /* AppDelegate.swift */,
+				F8D8087B20C664B90007C6E7 /* Main.storyboard */,
+				F8D8087E20C664B90007C6E7 /* Assets.xcassets */,
+				F8D8088020C664B90007C6E7 /* LaunchScreen.storyboard */,
+				F8D8088320C664B90007C6E7 /* Info.plist */,
+			);
+			path = IndiaSwift;
+			sourceTree = "<group>";
+		};
+		F8D8088B20C664BA0007C6E7 /* IndiaSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8D8088C20C664BA0007C6E7 /* IndiaSwiftTests.swift */,
+				F8D8088E20C664BA0007C6E7 /* Info.plist */,
+			);
+			path = IndiaSwiftTests;
+			sourceTree = "<group>";
+		};
+		F8D8089620C664BA0007C6E7 /* IndiaSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F8D8089720C664BA0007C6E7 /* IndiaSwiftUITests.swift */,
+				F8D8089920C664BA0007C6E7 /* Info.plist */,
+			);
+			path = IndiaSwiftUITests;
+			sourceTree = "<group>";
+		};
+		F8D808A620C668180007C6E7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8D808A720C668370007C6E7 /* LoginController */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F8D808A720C668370007C6E7 /* LoginController */ = {
+			isa = PBXGroup;
+			children = (
+				F8D808A820C6685D0007C6E7 /* Model */,
+				F8D808A920C668800007C6E7 /* View */,
+				F8D808AA20C668960007C6E7 /* Controller */,
+			);
+			name = LoginController;
+			sourceTree = "<group>";
+		};
+		F8D808A820C6685D0007C6E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8D8090120C69CAD0007C6E7 /* Login.swift */,
+				F8F6273520C9364C00EEF51D /* LoginResponse.swift */,
+				F866E68C20D0DE92007A2360 /* Settings.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F8D808A920C668800007C6E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F8D808AA20C668960007C6E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F8D8087920C664B90007C6E7 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F8D808EB20C682C20007C6E7 /* Utilits */ = {
+			isa = PBXGroup;
+			children = (
+				F8F6271D20C92FD600EEF51D /* DBHelper */,
+				F8D8090520C6B59F0007C6E7 /* Background */,
+				F8D808EC20C682EC0007C6E7 /* SwiftyJSON.swift */,
+				F8D808ED20C682EC0007C6E7 /* Constant.swift */,
+				F8D808EE20C682EC0007C6E7 /* Helper.swift */,
+				F8D808EF20C682EC0007C6E7 /* Reachability.swift */,
+				F8D808F020C682EC0007C6E7 /* JsonHelper.swift */,
+				F8D8090320C69FBE0007C6E7 /* UIHelper.swift */,
+			);
+			name = Utilits;
+			sourceTree = "<group>";
+		};
+		F8D808F620C684E50007C6E7 /* Resorces */ = {
+			isa = PBXGroup;
+			children = (
+				F81824A320C9032300FBF001 /* IndiaSwift-Bridging-Header.h */,
+				F81824A220C902DA00FBF001 /* Third party */,
+				F8D808FD20C68CFB0007C6E7 /* bg-image.png */,
+				F8D808FF20C68DD00007C6E7 /* ios-ic-logo.png */,
+			);
+			name = Resorces;
+			sourceTree = "<group>";
+		};
+		F8D8090520C6B59F0007C6E7 /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				F8091F4F20C7E938000E81D0 /* CastUUID.swift */,
+			);
+			name = Background;
+			sourceTree = "<group>";
+		};
+		F8F6271D20C92FD600EEF51D /* DBHelper */ = {
+			isa = PBXGroup;
+			children = (
+				F8F6271E20C9300500EEF51D /* FMDB */,
+				F8F6273120C9310500EEF51D /* Util.swift */,
+				F8F6273220C9310500EEF51D /* ModelManager.swift */,
+			);
+			name = DBHelper;
+			sourceTree = "<group>";
+		};
+		F8F6271E20C9300500EEF51D /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				F8F6271F20C9304200EEF51D /* FMDatabase.h */,
+				F8F6272020C9304200EEF51D /* FMDB.h */,
+				F8F6272120C9304200EEF51D /* FMDatabase.m */,
+				F8F6272220C9304200EEF51D /* FMResultSet.h */,
+				F8F6272320C9304200EEF51D /* FMResultSet.m */,
+				F8F6272420C9304200EEF51D /* FMDatabaseQueue.h */,
+				F8F6272520C9304200EEF51D /* FMDatabaseQueue.m */,
+				F8F6272620C9304200EEF51D /* FMDatabaseAdditions.h */,
+				F8F6272720C9304200EEF51D /* FMDatabaseAdditions.m */,
+				F8F6272820C9304200EEF51D /* FMDatabasePool.h */,
+				F8F6272920C9304200EEF51D /* FMDatabasePool.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8D8087320C664B90007C6E7 /* IndiaSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D8089C20C664BA0007C6E7 /* Build configuration list for PBXNativeTarget "IndiaSwift" */;
+			buildPhases = (
+				6B33158707870D88849EC63B /* [CP] Check Pods Manifest.lock */,
+				F8D8087020C664B90007C6E7 /* Sources */,
+				F8D8087120C664B90007C6E7 /* Frameworks */,
+				F8D8087220C664B90007C6E7 /* Resources */,
+				7B419AC58F35280D82979339 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IndiaSwift;
+			productName = IndiaSwift;
+			productReference = F8D8087420C664B90007C6E7 /* IndiaSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8D8088720C664BA0007C6E7 /* IndiaSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D8089F20C664BA0007C6E7 /* Build configuration list for PBXNativeTarget "IndiaSwiftTests" */;
+			buildPhases = (
+				D158021E9FBB1DAD68C490D5 /* [CP] Check Pods Manifest.lock */,
+				F8D8088420C664BA0007C6E7 /* Sources */,
+				F8D8088520C664BA0007C6E7 /* Frameworks */,
+				F8D8088620C664BA0007C6E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8D8088A20C664BA0007C6E7 /* PBXTargetDependency */,
+			);
+			name = IndiaSwiftTests;
+			productName = IndiaSwiftTests;
+			productReference = F8D8088820C664BA0007C6E7 /* IndiaSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8D8089220C664BA0007C6E7 /* IndiaSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D808A220C664BA0007C6E7 /* Build configuration list for PBXNativeTarget "IndiaSwiftUITests" */;
+			buildPhases = (
+				19C6538523534A4AA0AB7C8D /* [CP] Check Pods Manifest.lock */,
+				F8D8088F20C664BA0007C6E7 /* Sources */,
+				F8D8089020C664BA0007C6E7 /* Frameworks */,
+				F8D8089120C664BA0007C6E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8D8089520C664BA0007C6E7 /* PBXTargetDependency */,
+			);
+			name = IndiaSwiftUITests;
+			productName = IndiaSwiftUITests;
+			productReference = F8D8089320C664BA0007C6E7 /* IndiaSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8D8086C20C664B90007C6E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Orient;
+				TargetAttributes = {
+					F8D8087320C664B90007C6E7 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 45M9PF8XBD;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					F8D8088720C664BA0007C6E7 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F8D8087320C664B90007C6E7;
+					};
+					F8D8089220C664BA0007C6E7 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F8D8087320C664B90007C6E7;
+					};
+				};
+			};
+			buildConfigurationList = F8D8086F20C664B90007C6E7 /* Build configuration list for PBXProject "IndiaSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8D8086B20C664B90007C6E7;
+			productRefGroup = F8D8087520C664B90007C6E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8D8087320C664B90007C6E7 /* IndiaSwift */,
+				F8D8088720C664BA0007C6E7 /* IndiaSwiftTests */,
+				F8D8089220C664BA0007C6E7 /* IndiaSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8D8087220C664B90007C6E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D808FE20C68CFB0007C6E7 /* bg-image.png in Resources */,
+				F8D8090020C68DD00007C6E7 /* ios-ic-logo.png in Resources */,
+				F8D8088220C664B90007C6E7 /* LaunchScreen.storyboard in Resources */,
+				F8D8087F20C664B90007C6E7 /* Assets.xcassets in Resources */,
+				F8D8087D20C664B90007C6E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D8088620C664BA0007C6E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D8089120C664BA0007C6E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19C6538523534A4AA0AB7C8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IndiaSwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B33158707870D88849EC63B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IndiaSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B419AC58F35280D82979339 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IndiaSwift/Pods-IndiaSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IndiaSwift/Pods-IndiaSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D158021E9FBB1DAD68C490D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IndiaSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8D8087020C664B90007C6E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D808F120C682EC0007C6E7 /* SwiftyJSON.swift in Sources */,
+				F81824A920C9032400FBF001 /* UIColor+HexColors.m in Sources */,
+				F8F6272E20C9304200EEF51D /* FMDatabasePool.m in Sources */,
+				F8091F5020C7E938000E81D0 /* CastUUID.swift in Sources */,
+				F8F6272A20C9304200EEF51D /* FMDatabase.m in Sources */,
+				F81824A820C9032400FBF001 /* ColorPickerTextField.m in Sources */,
+				F8F6272D20C9304200EEF51D /* FMDatabaseAdditions.m in Sources */,
+				F8F6273320C9310500EEF51D /* Util.swift in Sources */,
+				F866E68D20D0DE92007A2360 /* Settings.swift in Sources */,
+				F8D8087A20C664B90007C6E7 /* ViewController.swift in Sources */,
+				F8F6272B20C9304200EEF51D /* FMResultSet.m in Sources */,
+				F8D808F420C682EC0007C6E7 /* Reachability.swift in Sources */,
+				F81824AE20C9059E00FBF001 /* HFColorButton.m in Sources */,
+				F8D808F520C682EC0007C6E7 /* JsonHelper.swift in Sources */,
+				F81824AF20C9059E00FBF001 /* HFColorPickerView.m in Sources */,
+				F8D808F320C682EC0007C6E7 /* Helper.swift in Sources */,
+				F8D8090420C69FBE0007C6E7 /* UIHelper.swift in Sources */,
+				F8D8087820C664B90007C6E7 /* AppDelegate.swift in Sources */,
+				F8F6273420C9310500EEF51D /* ModelManager.swift in Sources */,
+				F8F6272C20C9304200EEF51D /* FMDatabaseQueue.m in Sources */,
+				F8D808F220C682EC0007C6E7 /* Constant.swift in Sources */,
+				F8F6273620C9364C00EEF51D /* LoginResponse.swift in Sources */,
+				F8D8090220C69CAD0007C6E7 /* Login.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D8088420C664BA0007C6E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D8088D20C664BA0007C6E7 /* IndiaSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D8088F20C664BA0007C6E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D8089820C664BA0007C6E7 /* IndiaSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8D8088A20C664BA0007C6E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8D8087320C664B90007C6E7 /* IndiaSwift */;
+			targetProxy = F8D8088920C664BA0007C6E7 /* PBXContainerItemProxy */;
+		};
+		F8D8089520C664BA0007C6E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8D8087320C664B90007C6E7 /* IndiaSwift */;
+			targetProxy = F8D8089420C664BA0007C6E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8D8087B20C664B90007C6E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8D8087C20C664B90007C6E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8D8088020C664B90007C6E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8D8088120C664B90007C6E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8D8089A20C664BA0007C6E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8D8089B20C664BA0007C6E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8D8089D20C664BA0007C6E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B15ADDBFCFD11E2D55D2411 /* Pods-IndiaSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 45M9PF8XBD;
+				INFOPLIST_FILE = IndiaSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orient.IndiaSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IndiaSwift/IndiaSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F8D8089E20C664BA0007C6E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA1531439922D3D5A5522E28 /* Pods-IndiaSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 45M9PF8XBD;
+				INFOPLIST_FILE = IndiaSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orient.IndiaSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IndiaSwift/IndiaSwift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F8D808A020C664BA0007C6E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCD6ECFDE0E41299A7A4FAB1 /* Pods-IndiaSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = IndiaSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orient.IndiaSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IndiaSwift.app/IndiaSwift";
+			};
+			name = Debug;
+		};
+		F8D808A120C664BA0007C6E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2A1E7375BAF2C5BBA83CB9D /* Pods-IndiaSwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = IndiaSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orient.IndiaSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IndiaSwift.app/IndiaSwift";
+			};
+			name = Release;
+		};
+		F8D808A320C664BA0007C6E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FADA6A63225CCD84E4F0A9F7 /* Pods-IndiaSwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = IndiaSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orient.IndiaSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = IndiaSwift;
+			};
+			name = Debug;
+		};
+		F8D808A420C664BA0007C6E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAAC34229A4DC6C3EB413295 /* Pods-IndiaSwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = IndiaSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orient.IndiaSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = IndiaSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8D8086F20C664B90007C6E7 /* Build configuration list for PBXProject "IndiaSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D8089A20C664BA0007C6E7 /* Debug */,
+				F8D8089B20C664BA0007C6E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D8089C20C664BA0007C6E7 /* Build configuration list for PBXNativeTarget "IndiaSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D8089D20C664BA0007C6E7 /* Debug */,
+				F8D8089E20C664BA0007C6E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D8089F20C664BA0007C6E7 /* Build configuration list for PBXNativeTarget "IndiaSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D808A020C664BA0007C6E7 /* Debug */,
+				F8D808A120C664BA0007C6E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D808A220C664BA0007C6E7 /* Build configuration list for PBXNativeTarget "IndiaSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D808A320C664BA0007C6E7 /* Debug */,
+				F8D808A420C664BA0007C6E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8D8086C20C664B90007C6E7 /* Project object */;
+}

@@ -1,0 +1,480 @@
+.row{
+	margin-left:0px !important;
+	margin-right:0px !important;
+}
+.backbtn{
+	 padding: 5px;
+    float: left;
+    border-top-right-radius: 5em;
+    border-bottom-right-radius: 5em;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+    width: 40px;
+    height: 40px;
+    margin-left: 0px;
+}
+.editbtn{
+	float: right;
+    border-top-left-radius: 5em;
+    border-bottom-left-radius: 5em;
+    border-right-style: none;
+    border-bottom-left-radius: 5em;
+    margin-right: -4px;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+    width: 40px;
+    height: 40px;
+    margin-right: -5px;
+    padding: 5px;
+    margin-right: 0px;
+  
+   
+}
+.editimg{
+
+    width: 60%;
+    position: relative;
+    right: -7px;
+    top: 2px;
+}
+.plantertxt{
+	 font-size: 21.4px;
+    font-style: italic;
+    color: rgba(249, 215, 140, 1);
+    font-family: BodoniSvtyTwoOSITCTT-BookIt;
+	
+}
+.point{
+text-align: left;
+  
+    font-weight: 700;
+}
+.point1{
+font-style: bold; 
+color: #8bc259;
+font-size: 13px;
+}
+.point2{
+	font-style: bold; 
+color: #676664; font-family: bold; 
+font-size: 13px;
+}
+
+.point3{
+color: white; font-family: bold; 
+font-size: 13px
+}
+.planterimg{
+     height: 47px;
+    width: 52px;
+    margin-top: -2px;
+}
+
+.goatrip{
+  color: #717171;
+    width: 146px;
+    height: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 23px
+}
+.letterspace{
+	letter-spacing:5px;
+}
+.plantershadow{
+
+    width: 172px;
+    padding: 3px;
+    border-radius: 5em;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+    height: 50px;
+}
+.ui-block-b{
+	color: #444444;
+    font-weight: lighter;
+}
+.ui-block-a{
+padding-left: 25px;
+    padding-top: 8px;
+    text-align: left;
+    color: #444444;
+}
+
+.ui-block-c{
+	color: #444444;
+    padding-top: 8px;
+    text-align: right;
+    padding-right: 25px;
+}
+#oftxt{
+font-weight: bold;
+    margin-top: -4%;
+    margin-left: -12%;
+}
+#divider{
+	margin-left: 15%;
+    margin-right: 18%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;	
+}
+.amt{
+	font-size: 10px;
+    margin-left: -15px;
+}
+#details{
+font-weight: bold;
+    text-align: center;
+   color: rgba(82, 219, 106, 1);
+    padding-right: 10%;
+}
+#account{
+	color:#9B9B9B;
+	font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    
+	
+}
+#user{
+   margin-left: -3%;
+width: 19.5px;
+height: 24.5px;
+margin-top: -22px;
+}
+.acctxt{
+	margin-left: 15%;
+    font-style: normal;
+    color: #9B9B9B;
+    font-weight: lighter;
+    margin-top: -18%;
+    font-size: 18px;
+}
+#savingicon{
+      margin-left: -3%;
+    width: 24.5px;
+    height: 24.5px;
+}
+.savingtxt{
+	 margin-left: 15%;
+    font-style: normal;
+    color: #9B9B9B;
+    font-weight: lighter;
+    margin-top: -12%;
+    font-size: 18px;
+}
+.savingtxt9 {
+    margin-left: 20%;
+    font-style: normal;
+    color: #9B9B9B;
+    font-weight: lighter;
+    margin-top: -10%;
+    font-size: 18px;
+}
+#savingicon2 {
+   width: 24.5px;
+height: 24.5px;
+position: absolute;
+/* top: 127px; */
+bottom: 36px;
+left: 8px;
+}
+.myaacount{
+	color: #000000;
+    text-align: right;
+    font-size: 18px;
+    padding: 6%;
+}
+.moderate{
+    color: #000000;
+    text-align: right;
+    font-size: 18px;
+   padding: 5% 5% 8% 8%;
+   
+    margin-left: 10px;
+}
+#raintxt1{
+	margin-top: 46%;
+    color: #439DDD;
+    font-size: 17.5px;
+    text-align: center;
+    text-shadow:none;
+	
+}
+#raintxt2{
+	margin-top: -15px;
+    color: #439DDD;
+    font-size: 17.5px;
+    text-align: center;
+    text-shadow:none;
+    }
+  #grasstxt1{
+     margin-top: 43%;
+    color: #439DDD;
+    font-size: 17.5px;
+    text-align: center;
+    
+  }
+  #grasstxt2{
+	    margin-top: -15px;
+    color: #439DDD;
+    font-size: 17.5px;
+    text-align: center;
+    }
+    #bushtxt1{
+     margin-top: 43%;
+    color: #439DDD;
+    font-size: 17.5px;
+    text-align: center;
+    }
+    #bushtxt2{
+	  margin-top: -15px;
+    color: #439DDD;
+    font-size: 17.5px;
+    text-align: center;
+    }
+    #ofdivider{
+   margin-top: -7%;
+    margin-left: -17%;
+    font-size: 20px;
+        font-weight: 500;
+    }
+    #sec1{
+    border: 1px solid rgba(229, 229, 229, 1);
+    height: 22.8px;
+    width: 55px;
+    background-color: white;
+    box-shadow: 0px 1px 0px 0px #E5E5E5;
+    }
+     #sec2{
+    border: 1px solid rgba(229, 229, 229, 1);
+    height: 22.8px;
+    width: 50px;
+        margin-left: 20px;
+        background-color: white;
+        box-shadow: 0px 1px 0px 0px #E5E5E5;
+    }
+     #sec3{
+    border: 1px solid rgba(229, 229, 229, 1);
+    height: 22.8px;
+    width: 50px;
+    background-color: white;
+    box-shadow: 0px 1px 0px 0px #E5E5E5;
+    }
+     #sec4{
+    border: 1px solid rgba(229, 229, 229, 1);
+    height: 22.8px;
+    width: 50px;
+    background-color: white;
+    box-shadow: 0px 1px 0px 0px #E5E5E5;
+    }
+     #sec5{
+    border: 1px solid rgba(229, 229, 229, 1);
+    height: 22.8px;
+    width: 50px;
+    background-color: white;
+    box-shadow: 0px 1px 0px 0px #E5E5E5;
+    }
+    #tree19{
+    text-align: center;
+    padding: 2px;
+    }
+    #bush20{
+    text-align: center;
+    padding: 2px;
+    }
+    #bush1{
+       margin-top: 10px;
+    width: 25px;
+    height: 15px;
+    
+    }
+    #tree5{
+        padding: 2px;
+    margin-top: 12px;
+    }
+    #tree3 {
+    padding: 2px;
+    margin-top: 25px;
+}
+    #tree1{
+    padding: 2px;
+    margin-top: 20px;
+    }
+    #tree2{
+    padding: 2px;
+    margin-top: 10px;
+    }
+    #tree21{
+    margin-left: -15px;
+    margin-top: -5px;
+    }
+    
+    #mushroom1{
+    margin-right: 24px;
+    margin-top: 10px;
+    }
+    #tree23{
+    margin-left: 15px;
+    padding: 2px;
+    }
+    #tree22{
+     padding: 2px;
+    }
+    .point{
+    font-size: 11px;
+    color: rgba(82, 219, 106, 1);
+    }
+    #detail{
+    padding-top: 5px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(155, 155, 155, 1);
+    padding-left: 15%;
+    }
+    #activitys{
+    padding-top: 5px;
+    font-weight: bold;
+    color: rgba(82, 219, 106, 1);
+    text-align: center;
+    padding-right: 120px;
+    margin-left: 30%;
+    }
+    #divider13{
+    margin-left: 42px;
+    width: 80%;
+    margin-top: -20px;
+    }
+   .backbtnimg{
+    width: 25.9px;
+    padding: 9px;
+    position: relative;
+    right: -px;
+    top: -3px;
+    height: inherit;
+   
+   }
+   .myaccount{
+   text-align: center;
+    padding-left: 86px;
+    margin-top: 20px;
+   }
+   #monkeyhome{
+position:absolute;
+left:-15px;
+top:20%
+   }
+  #amt2{
+        margin-top: 2%;
+    margin-left: 14%;
+    font-size: 60px;
+    color: #3A9F4C;
+   }
+   #outbal{
+margin-top: 2%;
+font-size: 15px;
+color: #767676;
+text-align: center;
+   }
+   #amt4{
+  font-size: 15px;
+margin-top: -8%;
+margin-left: 55%;
+color: #439DDD;
+   }
+   #amt6{
+font-size: 30px;
+margin-top: 2%;
+color: #3A9F4C;
+text-align: center;
+}
+
+   #amt5{
+   color: #3A9F4C;
+    font-size: 30px;
+        text-align: center;
+  
+   }
+   #amt7{
+       margin-top: 0%;
+    font-size: 30px;
+    color: #3A9F4C;
+        text-align: center;
+   }
+   #safetxt{
+    margin-top: 13%;
+    font-size: 25px;F
+font-family:sfns-thin;
+color:#767676;
+font-weight: 100;
+   
+   }
+   .menubtnimg {
+    width: 17.9px;
+    left: 4px;
+    top: 3px;
+    position: relative;
+}
+.plusimg{
+  padding: 1px;
+    width: 84%;
+    position: relative;
+    right: -2px;
+    top: 2px;
+}
+
+.save{
+	color:#767676;
+	font-size:15px;
+	font-family:sfns-thin;
+	font-weight:bold;
+	
+	
+}
+#goals{
+	
+	background-color:#f5f5f5;
+}
+.ui-panel-inner{
+	padding:0;
+}
+#crausalTxt1{
+	font-family: Helveticaneuethin;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-left: -63px;
+    line-height: 29px;
+}
+#crausalTxt2 {
+    font-family: Helveticaneuethin;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-left: -63px;
+    line-height: 29px;
+}
+#crausalTxt4{
+font-family: Helveticaneuethin;
+    font-size: 20px;
+    padding-left: -28px;
+    /* padding-right: 178px; */
+    line-height: 25px;
+    margin-left: -56px;
+}
+
+.myacc_selectimg{
+	padding-left: 2px;
+    width: 10px;
+    height: 12px;
+    margin-left: -20px;
+    position: absolute;
+    margin-top: -23px;
+}
+
+.goal8back {
+    width: 30.9px;
+    padding: 10px;
+    position: relative;
+    right: -px;
+    height: inherit;
+    top: -6px;
+    left: -6px;
+}

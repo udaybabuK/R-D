@@ -1,0 +1,2063 @@
+<!DOCTYPE HTML>
+<html ng-app="microSaveapp">
+    	<head>
+    		<meta charset="UTF-8">
+    		<title>MicroSaving</title>
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    		
+    		<link href="jqueryMobile/css/jquery.mobile.theme-1.3.2.min.css" rel="stylesheet">
+    		<link href="jqueryMobile/css/jquery.mobile-1.3.2.min.css" rel="stylesheet">
+    		<link href="jqueryMobile/css/jquery.mobile.theme-1.3.2.css" rel="stylesheet">
+    		<link href="jqueryMobile/css/jquery.mobile.structure-1.3.2.min.css" rel="stylesheet">
+    		<link href="jqueryMobile/css/jquery.mobile.structure-1.3.2.css" rel="stylesheet">
+    		<link href="jqueryMobile/css/jquery.mobile-1.3.2.css" rel="stylesheet">
+    		<link rel="stylesheet" href="css/main.css">
+    		<link rel="stylesheet" href="css/goals8.css">
+    		<link rel="stylesheet" href="css/selectbutton.css">
+    		<link rel="stylesheet" href="css/crausal.css">
+    		<link rel="stylesheet" href="css/dialog.css">
+    		<link rel="stylesheet" href="css/mislenious.css">
+    		<link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/NewGoalAlert.css">
+            
+            <script src="jqueryMobile/js/angular.min.js"></script>
+            <script src="jqueryMobile/js/angular-ui-router.min.js"></script>
+            <script src="controller/indexCtrl.js"></script>
+    		<script>window.$ = window.jQuery = WLJQ;</script>
+    		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+            <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="jqueryMobile/js/jquery.js"></script>
+    		<script src="jqueryMobile/js/jquery.mobile-1.3.2.js"></script>
+    		<!--  start of Panel -->
+    		<script>
+       			 $(document).on("pageinit", "#demo-page", function() {
+           			 $(document).on("swipeleft swiperight", "#demo-page", function(e) {
+               			 if ($.mobile.activePage.jqmData("panel") !== "open") {
+                    		if (e.type === "swipeleft") {
+                        		$("#right-panel").panel("open");
+                   			 } else if (e.type === "swiperight") {
+                        		$("#left-panel").panel("open");
+                   			 }
+               			 }
+           			 });
+       			 });
+   		   </script>
+           <script>
+       		jQuery(document).ready(function($) {
+
+            var jssor_1_SlideoTransitions = [
+                [{
+                    b: 5500,
+                    d: 3000,
+                    o: -1,
+                    r: 240,
+                    e: {
+                        r: 2
+                    }
+                }],
+                [{
+                    b: -1,
+                    d: 1,
+                    o: -1,
+                    c: {
+                        x: 51.0,
+                        t: -51.0
+                    }
+                }, {
+                    b: 0,
+                    d: 1000,
+                    o: 1,
+                    c: {
+                        x: -51.0,
+                        t: 51.0
+                    },
+                    e: {
+                        o: 7,
+                        c: {
+                            x: 7,
+                            t: 7
+                        }
+                    }
+                }],
+                [{
+                    b: -1,
+                    d: 1,
+                    o: -1,
+                    sX: 9,
+                    sY: 9
+                }, {
+                    b: 1000,
+                    d: 1000,
+                    o: 1,
+                    sX: -9,
+                    sY: -9,
+                    e: {
+                        sX: 2,
+                        sY: 2
+                    }
+                }],
+                [{
+                    b: -1,
+                    d: 1,
+                    o: -1,
+                    r: -180,
+                    sX: 9,
+                    sY: 9
+                }, {
+                    b: 2000,
+                    d: 1000,
+                    o: 1,
+                    r: 180,
+                    sX: -9,
+                    sY: -9,
+                    e: {
+                        r: 2,
+                        sX: 2,
+                        sY: 2
+                    }
+                }],
+                [{
+                    b: -1,
+                    d: 1,
+                    o: -1
+                }, {
+                    b: 3000,
+                    d: 2000,
+                    y: 180,
+                    o: 1,
+                    e: {
+                        y: 16
+                    }
+                }],
+                [{
+                    b: -1,
+                    d: 1,
+                    o: -1,
+                    r: -150
+                }, {
+                    b: 7500,
+                    d: 1600,
+                    o: 1,
+                    r: 150,
+                    e: {
+                        r: 3
+                    }
+                }],
+                [{
+                    b: 10000,
+                    d: 2000,
+                    x: -379,
+                    e: {
+                        x: 7
+                    }
+                }],
+                [{
+                    b: 10000,
+                    d: 2000,
+                    x: -379,
+                    e: {
+                        x: 7
+                    }
+                }],
+                [{
+                    b: -1,
+                    d: 1,
+                    o: -1,
+                    r: 288,
+                    sX: 9,
+                    sY: 9
+                }, {
+                    b: 9100,
+                    d: 900,
+                    x: -1400,
+                    y: -660,
+                    o: 1,
+                    r: -288,
+                    sX: -9,
+                    sY: -9,
+                    e: {
+                        r: 6
+                    }
+                }, {
+                    b: 10000,
+                    d: 1600,
+                    x: -200,
+                    o: -1,
+                    e: {
+                        x: 16
+                    }
+                }]
+            ];
+
+            var jssor_1_options = {
+                $AutoPlay: false,
+                $Loop: 0,
+                $SlideEasing: $Jease$.$OutQuint,
+                $CaptionSliderOptions: {
+                    $Class: $JssorCaptionSlideo$,
+                    $Transitions: jssor_1_SlideoTransitions
+                },
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                } else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+        </script>
+        <!-- End of Panel -->
+        <script>
+        $(document).ready(function() {
+            $("#moderateimage").click(function() {
+                $("#lowimage").fadeTo("slow", 0.3);
+                $("#highimage").fadeTo("slow", 0.3);
+                 $("#moderateimage").fadeTo("slow", 1);
+
+            });
+
+            $("#highimage").click(function() {
+                $("#lowimage").fadeTo("slow", 0.3);
+                $("#moderateimage").fadeTo("slow", 0.3);
+                $("#highimage").fadeTo("slow", 1);
+
+            });
+            
+            $("#lowimage").click(function() {
+                $("#lowimage").fadeTo("slow", 1);
+                $("#moderateimage").fadeTo("slow", 0.3);
+                $("#highimage").fadeTo("slow", 0.3);
+
+            });
+            
+          $("#rcorners1").click(function () {
+            $(this).toggleClass("g_alert1");
+            });
+            
+          $("#rcorners2").click(function () {
+            $(this).toggleClass("g_alert2");
+            });
+            
+          $("#rcorners3").click(function () {
+            $(this).toggleClass("g_alert3");
+            });
+            
+          $("#rcorners4").click(function () {
+            $(this).toggleClass("g_alert4");
+            }); 
+            
+         $("#rcorners5").click(function () {
+            $(this).toggleClass("g_alert5");
+            });
+            
+         $("#rcorners6").click(function () {
+            $(this).toggleClass("g_alert6");
+            });
+            
+          $("#rcorners7").click(function () {
+            $(this).toggleClass("g_alert7");
+            });
+            
+         $("#rcorners8").click(function () {
+            $(this).toggleClass("g_alert8");
+            });              
+        });
+       </script>
+    
+	   <script>
+			$(".backbtnimg").click(function(){
+    			window.history.back();
+   			});
+    
+			$(".editimg").click(function(){
+    			alert('This feature will be available soon');
+   			 });
+
+     
+     		var lastValue;
+
+			$("#Accchanger").bind("click", function(e){
+    			lastValue = $(this).val();
+			}).bind("change", function(e){
+    		changeConfirmation = confirm("Acc_no is changed");
+    			if (changeConfirmation) {
+       				 // Proceed as planned
+   				 } else {
+        	  $(this).val(lastValue);
+                 }
+           });
+	   </script>
+   	   <style>
+  
+       .profilebackground {
+            background-color: #88C055;
+        }
+        
+        .ribbon {
+            padding-top: 10px
+        }
+        
+        .acclevel {
+            position: absolute;
+            top: 4%;
+            left: 35.5%;
+            font-size: 18px;
+            color: #fff;
+        }
+        
+        .container {
+            padding-left: 5%;
+        }
+        
+        li {
+            list-style: none
+        }
+        
+        .col-xs-4 {
+            padding: 2%;
+            border-right: 1px dotted #fff;
+        }
+        
+        .achivements {
+            background-color: #fff;
+        }
+        
+        .profilebackgroundSlide {
+             background-color: #45544f;
+             padding:0px;
+             padding: 40px 0 0 0;
+                 text-shadow: 0 0px 0 transparent;
+        }
+ /*       
+a:link {
+    color: white!important;
+    text-decoration:none;
+}
+
+
+a:visited {
+     color: white!important;
+    text-decoration:none;
+}
+
+
+a:active {
+    color: white!important;
+    text-decoration:none;
+} */
+       </style>
+       </head>
+    	
+    	
+    <body ng-controller="indexController">
+    		
+    <!--  ----------------------------- Start of Login Page -----------------------  -->
+    		
+    		
+	<div id="login" data-role="page">
+		 <div class="loginouterdiv" >
+            <img border="0" src="images/logo_rbl_solo.png" width="100" height="100" style="padding:20px;">
+            <center>
+                <div >
+                    <form id="loginform" action="#intro1" class="loginformdiv">
+                        <div><input type="text"  placeholder="Mobile no.(e.g.8763833089)" >
+                        </div>
+                        <div><input type="text"  placeholder="PIN" ></div>
+                    </form>
+                </div>
+
+                <a href="#intro1" data-role="button" id="loginbutton" data-theme="b" style="width:80%;">Sign in</a>
+            </center>
+            <div style="margin-top:20px;">
+                <label id="label0" style="color: gray">or connect with</label>
+            </div>
+
+            <div style="margin-top:20px;">
+             <input type="image" name="facebook" src="images/facebook.png" alt="facebook">
+               <a href="#positionWindow2" data-role="image" data-inline="true" data-rel="popup" data-position-to="window" > <input type="image" name="twitter" src="images/Twitter.png" alt="twitter" style="margin-left:15px;"></a>
+                <input type="image" name="googleplus" src="images/googleplus.png" alt="google" style="margin-left:15px;">
+            </div>
+            
+            <div data-role="popup" id="positionWindow" class="ui-content" data-theme="d" style="padding-top: 10%;background-image:url(images/planter/Misc/Confetti.png);background-size:contain;background-repeat:no-repeat; font-family:Helvetica Neue Light;">
+                        <div style="text-align:center;">
+                            <img border="0" src="images/planter/Misc/ribbon.png" width="100" height="100" style="width:100%;">
+                            <p style=" position: absolute;top: 10%; left: 33.5%;font-size: 18px;color: #fff;font-size: 22px;font-weight: inherit;">The Planter</p>
+                        </div>
+                        <div style="text-align:center;">
+                            <img border="0" src="images/planter/Misc/Badge.png" width="100" height="100" style="width: 60%;height: 40%;">
+                        </div>
+                        <div class="popuptext">
+                            <p>Congrats! New level achieved</p>
+                        </div>
+                        <div style="margin-top:20px;text-align:center;">
+                           <input type="image" name="facebook" src="images/facebook.png" alt="facebook">
+                           <input type="image" name="twitter" src="images/Twitter.png" alt="twitter" style="margin-left:15px;">
+                           <input type="image" name="googleplus" src="images/googleplus.png" alt="google" style="margin-left:15px;">
+                        </div> 
+               </div>
+
+
+               <div data-role="popup" id="positionWindow2" class="ui-content" data-theme="d" style="padding-top: 10%;background-image:url(images/planter/Misc/Confetti.png);background-size:contain;background-repeat:no-repeat; font-family:Helvetica Neue Light;width: 140%;
+    right: 20%;">
+						<div id="circle">
+                            <div class="pointnum" id="pointnimid">2000</div>
+                            <div class="pointnum" id="points">Points</div>
+                        </div>
+                        <div class="popuptext">
+                            <p>For finishing your first goal</p>
+                            <p>Keep it up!</p>
+                        </div>
+                        <div style="margin-top:20px;text-align:center;">
+                           <input type="image" name="facebook" src="images/facebook.png" alt="facebook">
+                           <input type="image" name="twitter" src="images/Twitter.png" alt="twitter" style="margin-left:15px;">
+                            <input type="image" name="googleplus" src="images/googleplus.png" alt="google" style="margin-left:15px;">
+                        </div> 
+               </div>
+
+            <div style="padding:3px;margin-top:20px;font-size:16px;">
+                <a href="#forgot"><label id="label1" style="text-align: left; color: gray">Forgot password</label></a>
+                <label id="label2" style="margin-left:10px;">|</label>
+                <a href="#register"><label id="label3" style="margin-left:10px; color: gray">Register</label></a> 
+               
+            </div>
+        </div>
+	</div>
+	<!--  ------------ Start of Login Page ------------  -->
+	
+	<!--  ------------ Start of register page ------------ -->
+	
+	<div id="register" data-role="page">
+	 <div data-role="content" style="padding:20px; text-align: center">
+            <img border="0" src="images/logo_rbl_solo.png" width="100" height="100" style="padding:20px;margin-top:10%">
+            <center>
+                <div style="margin-top:10%;padding:10px;">
+                    <form id="form" action="">
+                        <div style="width:80%;"><input type="text" name="full_name" id="full_name" placeholder="Full name" style="width:280px;"> </div>
+                        <div style="width:80%;"><input type="text" name="email_address" id="email_address" placeholder="Email address" style="width:280px;"> </div>
+                        <div style="width:80%;"><input type="text" name="mobile_no" id="mobile_no" placeholder="Mobile no(e.g.8763833089)" style="width:280px;"> </div>
+                        <div style="width:80%;"><input type="password" name="pin" id="pin" placeholder="PIN" style="width:280px;"> </div>
+                    </form>
+                    <a href="#intro1" data-role="button" id="button0" data-theme="b" style="width:80%; text-align: center" onclick="submit();">Register</a>
+
+                </div>
+            </center>
+
+        </div>
+	</div>
+	<!--  ------------ Start of register page ------------ -->
+	
+	
+	<!--  -----------------Start of Forgot Page---------------- -->
+	<div id="forgot" data-role="page" style="text-align: center; background-color: #98c86c;">
+		<img border="0" src="images/logo_rbl_solo.png" width="100" height="100" style="padding:20px;margin-top:15%;">
+    <center>
+        <div data-role="content" style="padding: 20px;">
+
+            <form id="reset_password" action="" style="width:80%;padding:10px;">
+                <i class="fa fa-envelope-o" style="font-size:28px;margin-left:12px;position: absolute;margin-top:11px;color: gray;z-index:1;"></i>
+                <input type="text" name="login_email" id="login_email" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email address">
+
+                <button type="submit" data-role="button" data-theme="b">Reset Password</button>
+            </form>
+        </div>
+    </center>
+	</div>
+	<!--  --------------End of Forgot Password--------------- -->
+	
+	<!-- -------------start-goal8-------------------- -->
+	
+	<div id="goals8" data-role="page" style="background-image:url(images/img/low_amt_bg.png);width:100%;height:100%;background-size:cover;background-repeat: no-repeat;"data-ng-init="fetchgoalsDetails()">
+	<table style="margin-top: 10%;width:100%;">
+	<tbody><tr><td width="12%">
+	<div class="backbtn">				
+	<a href="#goals"><img border="0" src="images/logo/ic_back.png" width="50%" height="60%" class="goal8back" ></a>
+	</div></td>
+	<td align="center" style="color: #d6b874"> 
+	<div class="plantershadow">
+	<table  style="width:100%;">
+	<tbody><tr><td rowspan="2">
+	<a href="#goals9"><img border="0" src="images/img/planter.png" width="100%" height="100%" class="planterimg"></a>
+	</td>
+	<td class="plantertxt">The Planter</td></tr>
+	<tr><td class="point" ng-repeat="a in goals">
+	<span class="point1">0&nbsp;/<span class="point2">&nbsp;{{a.totalgoalAmount}}</span></td></tr>
+	</tbody></table>
+	</div>
+	</td>
+	<td width="12%">
+	<div class ="editbtn">
+	<a href="#newgoals">
+		<img border="0" src="images/logo/ic_edit.png" width="75%" height="60%" class="editimg"></a>
+		</div>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+					
+        <div style="align:center" align="center">
+            <h4 class="goatrip">G&nbsp; O&nbsp; A &nbsp;&nbsp;&nbsp;  T&nbsp; R&nbsp; I&nbsp; P</h4></div>
+        <div class="ui-grid-b" style="margin-bottom: 5px; float: none; text-align: center">
+            <div class="ui-block-a">FEB 01</div>
+        <div class="ui-block-b"style="padding: 10px;   font-size: 20px;">₹&nbsp;0</div>
+            <div class="ui-block-c" ng-repeat="a in goals">{{a.goalTrip1endDate}}</div>
+        </div>
+        <div class="ui-grid-solo" style="margin-top: 12px">
+            <div class="ui-block-a" id="divider" style="background-image: url(&quot;images/img/Divider.png&quot;); background-repeat: no-repeat; background-size: contain; text-align: center;margin-top:-10px;"
+        ng-repeat="a in goals" >
+                <p id="oftxt">of</p>
+                <p class="amt">₹{{a.totalAmount}}</p>
+            </div>
+        </div>
+        <div class="ui-grid-solo" style="height:80px;">
+        </div>
+        <div style="background-color:transparent;position:absolute;bottom:0;right:0;left:0;">
+            <div class="ui-grid-a" style="height:40px; ">
+                <div class="ui-block-a" id="details">DETAILS</div>
+                <div class="ui-block-b" id="account">ACTIVITY</div>
+            </div>
+            <div class="ui-grid-solo">
+                <div class="ui-block-a"style="padding-left: 0px;">
+                    <table style="height: 100%; width: 100%">
+                        <tbody style="margin-top:10px">
+                            <tr style="border-bottom: 1px solid #ddd;height:20%;">
+                                <td style="font-weight: 100;
+    padding-top: 30px;
+    width: 50%;
+    /* margin-left: 67px; */
+    padding-left: 20px;"><img src="images/logo/ic_user.png"id="user">
+                                    <p class="acctxt">  Account</p>
+                                </td>
+                                <td class="myaacount">My Account</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 100;
+    padding-top: 0px;
+    width: 50%;
+    padding-left: 20px;"  >
+    <img src="images/logo/ic_savmode.png" id="savingicon">
+                                    <p class="savingtxt"> Savings Mode</p>
+                                </td>
+                                <td class="moderate"ng-repeat="a in goals">{{a.mode}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+      
+        </div>
+	</div>
+	<!-- -------------End of start-goal8-------------------- -->
+	
+	<!-- -------------Start of-goal9-------------------- -->
+	
+	<div id="goals9" data-role="page" style="background-image:url(images/img/rain_bg.png);width:100%;height:100%;background-size:cover;background-repeat: no-repeat;">
+		<table style="margin-top:10%;width:100%;">
+	<tbody><tr><td  style="width:12%">
+	<div class="backbtn" onclick="goBack();">				
+	<img border="0" src="images/logo/ic_back.png" width="50%" height="50%" class="backbtnimg" >
+	</div></td>
+	<td align="center" style="color: #d6b874"> 
+	<div class="plantershadow">
+	<table style="width:100%;">
+	<tbody><tr><td rowspan="2">
+	<a href="#goals10"><img border="0" src="images/img/planter.png" width="100%" height="100%" class="planterimg"></a>
+	</td>
+	<td class="plantertxt">The Planter</td></tr>
+	<tr><td class="point">
+	<span class="point1">100&nbsp;/<span class="point2">&nbsp;5000</span></td></tr>
+	</tbody></table>
+	</div>
+	</td>
+	<td width="12%">
+	<div class ="editbtn">
+	<a href="#newgoals">
+		<img border="0" src="images/logo/ic_edit.png" width="75%" height="60%" class="editimg"></a>
+		</div> 
+		</td>
+		</tr>
+		</tbody>
+		</table>
+					
+        <div style="align:center" align="center">
+            <h4 class="goatrip">G&nbsp; O&nbsp; A &nbsp;&nbsp;&nbsp;  T&nbsp; R&nbsp; I&nbsp; P</h4></div>
+        <div class="ui-grid-b" style="margin-bottom: 5px; float: none; text-align: center">
+            <div class="ui-block-a">FEB 01</div>
+        <div class="ui-block-b"style="padding: 10px;font-size: 20px;">₹&nbsp;50</div>
+            <div class="ui-block-c">JUL 31</div>
+        </div>
+        <div class="ui-grid-solo" style="margin-top: 12px">
+   <div class="ui-block-a" id="divider" style="background-image: url(&quot;images/img/Divider.png&quot;); background-repeat: no-repeat; background-size: contain; text-align: center;margin-top:-10px;
+         ">
+                <p id="oftxt">of</p>
+                <p class="amt">₹ 5,000</p>
+            </div>
+        </div>
+        <div class="ui-grid-solo" style="height:80px;">
+      <p id="raintxt1">Your first saving have brought the rain</p>
+    <p id="raintxt2">Good start!</p>
+        </div>
+        <div class="ui-grid-solo" style="height:80px;">
+        </div>
+        <div style="background-color:transparent;position:absolute;bottom:0;right:0;left:0;">
+            <div class="ui-grid-a" style="height:40px; ">
+        
+                <div class="ui-block-a" id="details">DETAILS</div>
+                <div class="ui-block-b" id="account">ACTIVITY</div>
+            </div>
+            <div class="ui-grid-solo">
+                <div class="ui-block-a"style="padding-left: 0px;">
+                    <table style="height: 100%; width: 100%">
+                        <tbody style="margin-top:10px">
+                            <tr style="border-bottom: 1px solid #ddd;height:20%;">
+                                <td style="font-weight: 100;padding-top: 30px;
+    width: 50%;
+    /* margin-left: 67px; */
+    padding-left: 20px;"><img src="images/logo/ic_user.png"id="user">
+                                    <p class="acctxt"> Account</p>
+                                </td>
+                                <td class="myaacount">My Account</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 100;padding-top:5px;width:50%"><img src="images/logo/ic_savmode.png" id="savingicon2">
+                                    <p class="savingtxt9"> Savings Mode</p>
+                                </td>
+                                <td class="moderate">Moderate</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+	</div>
+	<!-- -------------End of goal9-------------------- -->
+	
+	<!-- ---------------------Start of Goals 10------------------- -->
+	<div id="goals10" data-role="page" style="background-image:url(images/img/av1_bg.png);width:100%;height:100%;background-size:cover;background-repeat: no-repeat;">
+	<table  style="margin-top: 10%;width:100%">
+	<tbody><tr><td width="12%">
+	<div class="backbtn" onclick="goBack();">				
+	<img border="0" src="images/logo/ic_back.png" width="50%" height="50%" class="backbtnimg">
+	</div></td>
+	<td align="center" style="color: #d6b874"> 
+	<div class="plantershadow">
+	<table  style="width:100%">
+	<tbody><tr><td rowspan="2">
+	<a href="#goals11"><img border="0" src="images/img/planter.png" width="100%" height="100%" class="planterimg"></a>
+	</td>
+	<td class="plantertxt">The Planter</td></tr>
+	<tr><td class="point">
+	<span class="point1">150&nbsp;/<span class="point2">&nbsp;5000</span></td></tr>
+	</tbody></table>
+	</div>
+	</td>
+	<td width="12%">
+	<div class ="editbtn">
+	<a href="#newgoals">
+		<img border="0" src="images/logo/ic_edit.png" width="75%" height="60%" class="editimg"></a>
+		</div>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+					
+        <div style="align:center" align="center">
+            <h4 class="goatrip">G&nbsp; O&nbsp; A &nbsp;&nbsp;&nbsp;  T&nbsp; R&nbsp; I&nbsp; P</h4></div>
+        <div class="ui-grid-b" style="margin-bottom: 5px; float: none; text-align: center">
+            <div class="ui-block-a">FEB 01</div>
+        <div class="ui-block-b"style="padding: 5px;font-size: 20px;">₹&nbsp;500</div>
+            <div class="ui-block-c">JUL 31</div>
+        </div>
+        <div class="ui-grid-solo" style="margin-top: 12px">
+            <div class="ui-block-a" id="divider" style="background-image: url(&quot;images/img/Divider.png&quot;); background-repeat: no-repeat; background-size: contain; text-align: center;margin-top:-10px;
+         ">
+                <p id="oftxt">of</p>
+                <p class="amt">₹ 5,000</p>
+            </div>
+        </div>
+        <div class="ui-grid-solo" style="height:80px;">
+      <p id="grasstxt1">You're doing good</p>
+    <p id="grasstxt2">Life is starting over again!</p>
+        </div>
+        <div class="ui-grid-solo" style="height:80px;">
+        </div>
+        <div style="background-color:transparent;position:absolute;bottom:0;right:0;left:0;">
+            <div class="ui-grid-a" style="height:40px; ">
+        
+                <div class="ui-block-a" id="details">DETAILS</div>
+                <div class="ui-block-b" id="account">ACTIVITY</div>
+            </div>
+            <div class="ui-grid-solo">
+                <div class="ui-block-a"style="padding-left: 0px;">
+                    <table style="height: 100%; width: 100%">
+                        <tbody style="margin-top:10px">
+                            <tr style="border-bottom: 1px solid #ddd;height:20%;">
+                                <td style=" padding-top: 30px;
+    width: 50%;
+    /* margin-left: 67px; */
+    padding-left: 20px;""><img src="images/logo/ic_user.png"id="user">
+                                    <p class="acctxt"> Account</p>
+                                </td>
+                                <td class="myaacount">My Account</td>
+                            </tr>
+                            <tr>
+                                <td style=" 
+    width: 50%;
+    /* margin-left: 67px; */
+    padding-left: 20px;""><img src="images/logo/ic_savmode.png" id="savingicon">
+                                    <p class="savingtxt"> Savings Mode</p>
+                                </td>
+                                <td class="moderate">Moderate</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+	</div>
+	<!-- ---------------------End of Goals 10------------------- -->
+	
+	
+	<!--  -----------------Start woth Goals 11----------------- -->
+	
+	<div id="goals11" data-role="page" style="background-image:url(images/img/av2_bg.png);width:100%;height:100%;background-size:cover;background-repeat: no-repeat;">
+		<table style="margin-top: 10%;width:100%">
+	<tbody><tr><td width="12%">
+	<div class="backbtn" onclick="goBack();">				
+	<img border="0" src="images/logo/ic_back.png" width="50%" height="50%" class="backbtnimg">
+	</div></td>
+	<td align="center" style="color: #d6b874"> 
+	<div class="plantershadow">
+	<table  style="width:100%">
+	<tbody><tr><td rowspan="2">
+	<a href="#goals12"><img border="0" src="images/img/planter.png" width="100%" height="100%" class="planterimg"></a>
+	</td>
+	<td class="plantertxt">The Planter</td></tr>
+	<tr><td class="point">
+	<span class="point1">500&nbsp;/<span class="point2">&nbsp;5000</span></td></tr>
+	</tbody></table>
+	</div>
+	</td>
+	<td width="12%">
+	<div class ="editbtn">
+	<a href="#newgoals">
+		<img border="0" src="images/logo/ic_edit.png" width="75%" height="60%" class="editimg"></a>
+		</div>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+					
+        <div style="align:center" align="center">
+            <h4 class="goatrip">G&nbsp; O&nbsp; A &nbsp;&nbsp;&nbsp;  T&nbsp; R&nbsp; I&nbsp; P</h4></div>
+        <div class="ui-grid-b" style="margin-bottom: 5px; float: none; text-align: center">
+            <div class="ui-block-a">FEB 01</div>
+        <div class="ui-block-b"style="padding: 10px;font-size:20px;">₹&nbsp;1,500</div>
+            <div class="ui-block-c">JUL 31</div>
+        </div>
+        <div class="ui-grid-solo" style="margin-top: 12px">
+            <div class="ui-block-a" id="divider" style="background-image: url(&quot;images/img/Divider.png&quot;); background-repeat: no-repeat; background-size: contain; text-align: center;margin-top:-10px;
+         ">
+                <p id="oftxt">of</p>
+                <p class="amt">₹ 5,000</p>
+            </div>
+        </div>
+        <div class="ui-grid-solo" style="height:80px;">
+      <p id="bushtxt1">Nice work!</p>
+      <p id="bushtxt2">Keep going at same pace</p>
+        </div>
+        <div class="ui-grid-solo" style="height:80px;">
+        </div>
+        <div style="background-color:transparent;position:absolute;bottom:0;right:0;left:0;">
+            <div class="ui-grid-a" style="height:40px; ">
+        
+                <div class="ui-block-a" id="details"">DETAILS</div>
+                <div class="ui-block-b" id="account">ACTIVITY</div>
+            </div>
+            <div class="ui-grid-solo">
+                <div class="ui-block-a"style="padding-left: 0px";>
+                    <table style="height: 100%; width: 100%">
+                        <tbody style="margin-top:10px">
+                            <tr style="border-bottom: 1px solid #ddd;height:20%;">
+                                <td style="font-weight padding-top: 30px;
+    width: 50%;
+    /* margin-left: 67px; */
+    padding-left: 20px;";">
+    <img src="images/logo/ic_user.png"id="user">
+                                    <p class="acctxt"> Account</p>
+                                </td>
+                                <td class="myaacount">My Account</td>
+                            </tr>
+                            <tr>
+                                <td style=" width: 50%;
+    /* margin-left: 67px; */
+    padding-left: 20px;">
+    <img src="images/logo/ic_savmode.png" id="savingicon">
+                                    <p class="savingtxt"> Savings Mode</p>
+                                </td>
+                                <td class="moderate">Moderate</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+	</div>
+	<!--  -----------------End woth Goals 11----------------- -->
+	
+	
+	<!--  -----------------Start woth Goals 12----------------- -->
+	
+	<div id="goals12" data-role="page" style="background-image:url(images/img/goal_ach_bg.png);width:100%;height:100%;background-size:cover;background-repeat: no-repeat;">
+		<table  style="margin-top: 10%;width:100%">
+	<tbody><tr><td width="12%">
+	<div class="backbtn" onclick="goBack();">				
+	<img border="0" src="images/logo/ic_back.png" width="50%" height="50%" class="backbtnimg">
+	</div></td>
+	<td align="center" style="color: #d6b874"> 
+	<div class="plantershadow">
+	<table  style="width:100%">
+	<tbody><tr><td rowspan="2">
+	<a href="#goals13"><img border="0" src="images/img/planter.png" width="100%" height="100%" class="planterimg"></a>
+	</td>
+	<td class="plantertxt">The Planter</td></tr>
+	<tr><td class="point">
+	<span class="point1">1000&nbsp;/<span class="point2">&nbsp;5000</span></td></tr>
+	</tbody></table>
+	</div>
+	</td>
+	<td width="12%">
+	<div class ="editbtn">
+	<a href="#newgoals">
+		<img border="0" src="images/logo/ic_edit.png" width="75%" height="60%" class="editimg"></a>
+		</div>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+					
+        <div style="align:center" align="center">
+            <h4 class="goatrip">G&nbsp; O&nbsp; A &nbsp;&nbsp;&nbsp;  T&nbsp; R&nbsp; I&nbsp; P</h4></div>
+        <div class="ui-grid-b" style="margin-bottom: 5px; float: none; text-align: center">
+            <div class="ui-block-a">FEB 01</div>
+        <div class="ui-block-b"style="padding: 10px;"></div>
+            <div class="ui-block-c">JUL 31</div>
+        </div>
+        <div class="ui-grid-solo" style="margin-left: 40px;
+    width: 80%;
+    margin-top: -20px;">
+            <div class="ui-block-a" id="divider" style="background-image: url(&quot;images/img/Dividergoal13.png&quot;); background-repeat: no-repeat; background-size: contain; text-align: center;margin-top:-10px;
+         ">
+                <p id="ofdivider">₹ 5,000</p>
+           
+            </div>
+        </div>
+        
+        <div class="ui-grid-solo" style="height:80px;">
+        </div>
+        <div style="background-color:transparent;position:absolute;bottom:0;right:0;left:0;">
+            <div class="ui-grid-a" style="height:40px; ">
+        
+                <div class="ui-block-a" id="details">DETAILS</div>
+                <div class="ui-block-b" id="account">ACTIVITY</div>
+            </div>
+            <div class="ui-grid-solo">
+                <div class="ui-block-a"style="padding-left: 0px;">
+                    <table style="height: 100%; width: 100%">
+                        <tbody style="margin-top:10px">
+                            <tr style="border-bottom: 1px solid #ddd;height:20%;">
+                                <td style=" padding-top: 30px;
+    width: 50%;
+    /* margin-left: 67px; */
+    padding-left: 20px;">
+    <img src="images/logo/ic_user.png"id="user">
+                                    <p class="acctxt"> Account</p>
+                                </td>
+                                <td class="myaacount">My Account</td>
+                            </tr>
+                            <tr>
+                                <td style=" 
+    width: 50%;
+    /* margin-left: 67px; */
+    padding-left: 20px;">
+    <img src="images/logo/ic_savmode.png" id="savingicon">
+                                    <p class="savingtxt"> Savings Mode</p>
+                                </td>
+                                <td class="moderate">Moderate</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+	</div>
+	<!--  -----------------End woth Goals 12---------------- -->
+	
+	<!--  -----------------Start woth Goals 13---------------- -->
+	
+	<div id="goals13" data-role="page" style="background-image:url(images/img/goal_ach_bg.png);width:100%;height:100%;background-size:cover;background-repeat: no-repeat;">
+		<table  style="margin-top: 10%;width:100%">
+	<tbody><tr><td width="12%">
+	<div class="backbtn" onclick="goBack();">				
+	<img border="0" src="images/logo/ic_back.png" width="50%" height="50%" class="backbtnimg">
+	</div></td>
+	<td align="center" style="color: #d6b874"> 
+	<div class="plantershadow">
+	<table  style="width:100%">
+	<tbody><tr><td rowspan="2">
+	<img border="0" src="images/img/planter.png" width="100%" height="100%" class="planterimg">
+	</td>
+	<td class="plantertxt">The Planter</td></tr>
+	<tr><td class="point">
+	<span class="point1">1000&nbsp;/<span class="point2">&nbsp;5000</span></td></tr>
+	</tbody></table>
+	</div>
+	</td>
+	<td width="12%">
+	<div class ="editbtn">
+	<a href="#newgoals">
+		<img border="0" src="images/logo/ic_edit.png" width="75%" height="60%" class="editimg"></a>
+		</div>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+					
+        <div style="align:center" align="center">
+            <h4 class="goatrip">G&nbsp; O&nbsp; A &nbsp;&nbsp;&nbsp;  T&nbsp; R&nbsp; I&nbsp; P</h4></div>
+        <div class="ui-grid-b" style="margin-bottom: 5px; float: none; text-align: center">
+            <div class="ui-block-a">FEB 01</div>
+        <div class="ui-block-b"></div>
+            <div class="ui-block-c">JUL 31</div>
+        </div>
+        <div class="ui-grid-solo" id="divider13">
+            <div class="ui-block-a" id="divider" style="background-image: url(&quot;images/img/Dividergoal13.png&quot;); background-repeat: no-repeat; background-size: contain; text-align: center;margin-top:-10px;
+         ">
+                <p id="ofdivider">₹ 5,000</p>
+           
+            </div>
+        </div>
+        
+        <div class="ui-grid-solo" style="height:80px;">
+        </div>
+        <div style="position:absolute;bottom:0;right:0;left:0;padding:10px;">
+            <div class="ui-grid-b" style="height:40px; ">
+                <div class="ui-block-a" id="detail">DETAILS</div>
+				<div class="ui-block-b"></div>
+				<div class="ui-block-c" id="activitys">ACTIVITY</div>
+            </div>
+            <div class="ui-grid-d" style="height: 100%;vertical-align: baseline; border-bottom-color: gray; text-align: center">
+			<div class="ui-block-a" style="text-align: center;padding:2%; border-bottom-style: dashed; ">
+				<section id="sec1"><span class="point">₹1,000</span></section>
+				<img border="0" src="images/img/tree 1.png" width="100%" height="100%" id="tree1">
+			</div>
+			<div class="ui-block-b" style=" border-bottom-style: dashed; padding-top: 24%">
+			<section id="sec2"><span class="point">₹100</span></section>
+				<img border="0" src="images/img/bush1.png" width="40%" height="30%" id="bush1"></div>
+			<div class="ui-block-c" style=" border-bottom-style: dashed; text-align: center;padding-top:16%;">
+			<section id="sec3"><span class="point">₹250</span></section>
+				<img border="0" src="images/img/tree 1.png" width="40%" height="50%" id="tree3"></div>
+			<div class="ui-block-d" style=" border-bottom-style: dashed; text-align: center;padding-top:20%;">
+			<section id="sec4"><span class="point">₹10</span></section>
+				<img border="0" src="images/img/mushroom1.png" width="40%" height="40%" id="mushroom1"></div>
+			<div class="ui-block-e" style=" border-bottom-style: dashed; text-align: center;padding-top:5%;">
+			<section  id="sec5"><span class="point">₹800</span></section>
+				<img border="0" src="images/img/tree 1.png" width="80%" height="80%"  id="tree5"></div>
+			<div class="ui-block-a" id="tree19">19</div>
+			<div class="ui-block-b" id="bush20">20</div>
+			<div class="ui-block-c"id="tree21">21</div>
+			<div class="ui-block-d"id="tree22">22</div>
+			<div class="ui-block-e"id="tree23">23</div>
+		</div>
+        </div>
+	</div>
+	<!--  -----------------End with Goals 13---------------- -->
+	
+	<!--  -----------------Start with Start Goals---------------- -->
+	
+	<div id="goalstart" data-role="page" style="background-image:url(images/planter/Intro/5.png); background-size:cover" >
+		<div data-role="content" style="padding:15px;width:100%;height:100%;">
+              <center>
+                <div style="padding:10px;position: absolute;
+    bottom: 0;">
+                    <p style="font-size:18px;color: white">Poor Chimpu’s friends left the forest after the great wildfire Help them bring back together by re-afforesting their home with your savings goals</p>
+                    <a href="#newgoals" data-role="button" id="button" style="background-color: white; color: green;width:40%; text-align: center">START</a>
+                </div>
+            </center>
+        </div>
+	</div>
+	<!--  -----------------End with Start Goals---------------- -->
+	
+	
+	<!--  -----------------Start with Moderate---------------- -->
+	<div id="moderate" data-role="page">
+		<div>
+            <table  class="header" style="width:100%;background-color:WHITE;text-align: center;position: fixed;z-index:2;" >
+                <tr >
+                    <td width="20%">
+                        <img border="0" src="images/planter/Icons/ic_close.png" width="20" height="20" onclick="window.history.back() + alert('your modified is cancelled');">
+                    </td>
+                     <td style=" text-align: center;padding:2%;">
+                        <label id="label4" style="color: black;letter-spacing:18px; font-weight: bold">MODERATE</label>
+                    </td>
+                    <td width="20%" >
+                       <img border="0" src="images/planter/Icons/ic_tick.png" width="20" height="20"  onclick="window.history.back() + alert('your modified is Saved');">
+                    </td>
+                </tr>
+            </table>
+        </div>
+		<div data-role="content" style="background-color: white; text-align: center">
+			<a href="#Setting"><img border="0" src="images/planter/Misc/Mode_Med.png" width="40%" height="40%"    style="padding: 0% 5% 5% 0%;margin-top: 65px;"></a>
+		</div>
+
+		<div class="ui-grid-b" style="width:100%;line-height:40px;margin-top:1%; background-color: white" >
+			<div class="ui-block-a" style="width: 15%;padding-left: 3%; padding-right: 3%; padding-top: 3%;">
+				<img border="0" src="images/planter/Icons/ic_qi.png" width="80%" height="80%" >
+			</div>
+			<div class="ui-block-b" style="width: 60%;padding: 2%;">Quaterly Interest</div>
+			<div class="ui-block-c" style="width: 20%;padding: 3%;">
+			<form style="float:right;">
+                <select name="flip-1" id="flip-1" class="flipflop" data-role="slider" data-track-theme="e" data-mini="true">
+		             <option value="off"></option>
+		             <option value="on"></option>
+		        </select>
+		        </form></div>
+		</div>
+	
+		<div class="ui-grid-b" style="margin-top:1%;width:100%; background-color: white">
+			<div class="ui-block-a" style=" width: 15%;padding-left: 3%; padding-right: 3%; padding-top: 3%;">
+				<img border="0" src="images/planter/Icons/ic_ro.png" width="100%" height="100%" >
+			</div>
+			<div class="ui-block-b" style="width:60%;padding:4%;">
+			Cash Rounding
+			</div>
+			<div class="ui-block-c" style="width: 20%;padding:3%;">
+			<form style="float:right;">
+                <select name="flip-1" id="flip-1" class="flipflop" data-role="slider" data-track-theme="e" data-mini="true">
+		             <option value="off"></option>
+		             <option value="on"></option>
+		        </select>
+		        </form>
+		        </div>
+		</div>
+		<div class="ui-grid-b" style="background-color: white;margin-bottom:1%;">
+			<div class="ui-block-a" style="width: 15%;"></div>
+			<div class="ui-block-b" style="width:70%;padding:2%;">
+			<table style="width:100%;">
+			<tr><td style="text-align: left; vertical-align: top; color: gray; font-weight: bold;padding: 2%;">Repeat</td><td style="font-weight: bold; color: gray">Type</td></tr>
+			<tr><td style="text-align: left; vertical-align: top; width: 70%;padding: 2%;">
+			   <select id="cr_repeat">
+                  <option value="Daily">Daily</option>
+                  <option value="Weekly">Weekly</option>
+                  <option value="Monthly">Monthly</option>
+               </select>
+			    </td>
+			<td style="width: 50%;">
+			<select id="cr_type">
+                  <option value="Credit">Credit</option>
+                  <option value="Debit">Debit</option>
+             </select>
+			</td></tr>
+			<tr><td colspan="2" ></td></tr>
+			<tr><td colspan="2" style="color: gray;padding: 2%; font-weight: bold">Round To</td></tr>
+			<tr><td colspan="2" style="padding-right: 50%;background: transparent;">
+			₹ 100</td></tr>
+			</table></div>
+			<div class="ui-block-c" style="width:20%;"></div>
+		</div>
+
+<!-- ------Transaction--------- -->
+<div class="ui-grid-b" style="margin-top:1%;width:100%; background-color: white">
+			<div class="ui-block-a" style=" width: 15%;padding-left: 3%;padding-right: 3%;padding-top: 3%;">
+				<img border="0" src="images/planter/Icons/ic_txn.png" width="100%"
+					height="100%" >
+			</div>
+			<div class="ui-block-b" style="width:60%;padding:4%;">
+			Transactions
+			</div>
+			<div class="ui-block-c" style="width: 20%;padding: 3%;">
+			<form style="float:right;height:70%;">
+                <select name="flip-1" id="flip-1" class="flipflop" data-role="slider" data-track-theme="e" data-mini="true">
+		             <option value="off"></option>
+		             <option value="on"></option>
+		        </select>
+		        </form>
+		        </div>
+		</div>
+		<div class="ui-grid-b" style="background-color: white;margin-bottom:1%;">
+			<div class="ui-block-a" style="width: 15%;"></div>
+			<div class="ui-block-b" style="width:70%;padding:2%;">
+			<table style="width:100%;">
+			<tr><td style="text-align: left; vertical-align: top; padding: 2%;color: gray; font-weight: bold">Repeat</td>
+			<td style="font-weight: bold; color: gray;padding:2%;">Type</td></tr>
+			<tr><td style="text-align: left; vertical-align: top;padding: 2%;">
+			<select id="sh_repeat">
+                  <option value="Daily">Daily</option>
+                  <option value="Weekly">Weekly</option>
+                  <option value="Monthly">Monthly</option>
+               </select>
+			</td>
+			<td style="padding: 2%;">
+			<select id="sh_type">
+                  <option value="Credit">Credit</option>
+                  <option value="Debit">Debit</option>
+             </select>
+			</td></tr>
+			<tr><td style="text-align: left; vertical-align: top;padding: 2%; color: gray; font-weight: bold">Contribution</td>
+			<td style="font-weight: bold; color: gray">
+			Amount</td></tr>
+			<tr><td style="text-align: left; vertical-align: top;padding: 2%;font-weight: 600!important;">Fixed</td><td style="padding: 2%;font-weight: 600!important;">₹ 100</td></tr>
+			</table></div>
+			<div class="ui-block-c" style="width:20%;"></div>
+		</div>
+<!-- ---------- -->
+<div class="ui-grid-b" style="margin-top:1%;width:100%; background-color: white">
+			<div class="ui-block-a"  style=" width: 15%;padding-left: 3%;padding-right: 3%;padding-top: 3%;">
+				<img border="0" src="images/planter/Icons/ic_schedule.png" width="100%"
+					height="100%" style="padding:2%;">
+			</div>
+			<div class="ui-block-b" style="width:60%;padding:4%;">
+			Scheduled
+			</div>
+			<div class="ui-block-c" style="width: 20%;padding:3%;">
+			<form style="float:right;">
+                <select name="flip-1" id="flip-1" class="flipflop" data-role="slider" data-track-theme="e" data-mini="true">
+		             <option value="off"></option>
+		             <option value="on"></option>
+		        </select>
+		        </form>
+		        </div>
+</div>
+		<div class="ui-grid-b" style="background-color: white;margin-bottom:2%;">
+			<div class="ui-block-a" style="width: 15%;"></div>
+			<div class="ui-block-b" style="width:70%;padding:2%;">
+			<table style="width:100%;">
+			<tr><td style="text-align: left;padding: 2%; vertical-align: top; color: gray; font-weight: bold">Repeat</td>
+			<td style="font-weight: bold; color: gray">Time</td></tr>
+			<tr><td style="text-align: left;padding: 2%; vertical-align: top;">
+			 <select id="sh_repeat">
+                  <option value="Daily">Daily</option>
+                  <option value="Weekly">Weekly</option>
+                  <option value="Monthly">Monthly</option>
+               </select>
+			</td>
+			<td style="padding: 2%;">
+			<select id="sh_type">
+                  <option value="Credit">Credit</option>
+                  <option value="Debit">Debit</option>
+             </select>
+			</td></tr>
+			<tr><td style="text-align: left; padding: 2%;vertical-align: top; color: gray; font-weight: bold">Contribution</td>
+			<td style="font-weight: bold; color: gray">Amount</td></tr>
+			<tr><td style="text-align: left;padding: 2%; vertical-align: top;font-weight: 600!important;">Fixed</td><td style="padding: 2%;font-weight: 600!important;">₹ 100</td></tr>
+			</table></div>
+			<div class="ui-block-c" style="width:20%;"></div>
+		</div>
+	</div>
+	
+	<!--  -----------------End with Moderate---------------- -->
+	
+	
+	 <!-- ---------------------Start of Goals of VD Page 17----------------- -->
+	<div id="goals" data-role="page" data-theme="c" data-url="demo-page" data-ng-init="fetchgoalsDetails()">
+
+	<div data-role="content" class="goalcon" >
+        
+      <div class="ui-block-a" style="padding-left: 0px; margin-top:2%;width:100%; font-family:">
+         <table  style="margin-top:5%;width:100%">
+	        <tbody><tr><td width="12%">
+	            <div class="g_style1" >
+					<a href="#left-panel" data-theme="d">
+					<img border="0" src="images/planter/Icons/ic_menu.png" width="50%" height="50%" style="
+	  margin-top: 5px;
+    margin-left: 5px;"></a>
+	</div></td>
+	<td align="center" style="color: #d6b874"> 
+	<div style="width:70%;padding: 3px; border-radius: 5em;    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);">
+	<table  ng-repeat="g in goals" style="width:100%">
+	<tbody><tr><td rowspan="2">
+<a href="#goals8"><img border="0" src="images/planter/Icons/ic-planter.png" width="100%" height="100%"></td></a><td style="
+ font-size: 21.4px;
+    font-style: italic;
+    color: rgba(249, 215, 140, 1);
+    font-family: BodoniSvtyTwoOSITCTT-BookIt;">The Planter</td></tr>
+	<tr><td style="
+    text-align: left;
+    padding-left: 10px;
+    font-weight: 700;
+    "><span style="color: rgba(154, 216, 98, 1);
+    font-family: bold;
+    font-size: 15px;" >{{g.goalpoint}} /</span><span style="color: #676664"> {{g.totalAmount}}</span></td></tr>
+	</tbody></table>
+	</div>
+	</td>
+	<td width="12%"><div style="padding: 5px;float:right; border-top-left-radius: 5em;
+   border-bottom-left-radius: 5em;
+    border-right-style: none;
+    border-bottom-left-radius: 5em;
+    margin-right: -4px;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+    width: 40px; height: 40px;
+    margin-right: -5px;padding: 5px;margin-right: -5px;">
+		<a href="#newgoals"><img border="0" src="images/planter/Icons/ic_add_hlt.png" width="75%" style="margin-left: 5px;margin-top:2px;">
+					</div></td></tr></tbody></table>
+        </div>
+        
+        
+        <div style="text-align: center;    margin-top: 28%;
+    margin-bottom: 5%;">
+            <h5 style="color: gray; font-family: Helvetica Neue Light; font-weight: 700; font-size: 14px"> G &nbsp O &nbsp A &nbsp L &nbsp S</h5></div>
+
+
+ <a href="#goals8">
+        <div style='border-radius: 7px; margin-left: 3px; background-image: url("images/GoalList/average_2.png"); text-decoration: none; float: left; color: #585858; margin-bottom: 3px; background-repeat: no-repeat; font-family: Helvetica Neue Light; background-size: cover; margin-right: 3px' ng-repeat="g in goals">
+            <div style="float:left;padding-left:10px;margin-top:-2%">
+                <div style="float:left;">
+                    <h3  style="font-weight: 400">{{g.goalTrip1}}</h3>
+                </div>
+                <div style="float:left;">
+                    <p style="margin-left: 15px; color: silver; margin-right: 20px; margin-bottom: 20px; font-weight: 100; margin-top: 25px; font-size: 12px">{{g.goalTrip1startDate}}-{{g.goalTrip1endDate}}</p>
+                </div>
+            </div>
+            <div style="float:left;width:100%;">
+                <div style="float: left;    margin-bottom: -12%;    padding-left: 10px;margin-top: -5px;">
+                    <p style="font-weight: 100; font-size: 35px">₹ {{g.goalTrip1Amount}}</p>
+                </div>
+                <div style="float:left;">
+                    <h4 style="margin-left: 20px; margin-right: 20px; margin-bottom: 20px; font-weight: bolder; margin-top: 18px; font-size: 15px;font-family:Helvetica Neue ">of &nbsp; ₹ {{g.totalAmount}}</h4>
+                </div>
+            </div>
+        </div></a>
+        <div style="float:left;font-family:Helvetica Neue Light;margin-left:3px;margin-right:3px;margin-bottom:3px;border-radius:7px;background-image: url(images/GoalList/average_3.png);background-size:cover;background-repeat:no-repeat;color:#585858;" ng-repeat="g in goals">
+            <div style="float:left;padding-left:10px;margin-top:-2%">
+                <div style="float:left;">
+                    <h3  style="font-weight: 400">{{g.goalgift}}</h3>
+                </div>
+                <div style="float:left;">
+                    <p style="margin-left: 15px; color:white; margin-right: 20px; margin-bottom: 20px; font-weight: 100; margin-top: 25px; font-size: 12px">FEB 1-APR 31</p>
+                </div>
+            </div>
+            <div style="float:left;width:100%;">
+                <div style="float: left; margin-bottom: -12%;    padding-left: 10px;    margin-top: -5px;">
+                    <p style="font-weight: 100; font-size: 35px">₹ {{g.giftamt}}</p>
+                </div>
+                <div style="float:left;">
+                    <h4 style="margin-left: 20px; margin-right: 20px; margin-bottom: 20px; font-weight: bolder; margin-top: 18px; font-size: 15px;font-family:Helvetica Neue ">of &nbsp; ₹ {{g.giftamtof}}</h4>
+                </div>
+            </div>
+        </div>
+        <div style="float:left;font-family:Helvetica Neue Light;margin-left:3px;margin-right:3px;margin-bottom:3px;border-radius:7px;background-image: url(images/GoalList/average_1.png);background-size:cover;background-repeat:no-repeat;color:#585858;"ng-repeat="g in goals">
+            <div style="float:left;padding-left:10px;margin-top:-2%">
+                <div style="float:left;">
+                    <h3  style="font-weight: 400">{{g.vacation}}</h3>
+                </div>
+                <div style="float:left;">
+                    <p style="margin-left: 15px; color: white; margin-right: 20px; margin-bottom: 20px; font-weight: 100; margin-top: 25px; font-size: 12px">JAN 21-AUG 31</p>
+                </div>
+            </div>
+            <div style="float:left;width:100%;">
+                <div style="float: left;   margin-bottom: -12%;   padding-left: 10px;    margin-top: -5px;">
+                    <p style="font-weight: 100; font-size: 35px">₹ {{g.vacationamt}}</p>
+                </div>
+                <div style="float:left;">
+                    <h4 style="margin-left: 20px; margin-right: 20px; margin-bottom: 20px; font-weight: bolder; margin-top: 18px; font-size: 15px;font-family:Helvetica Neue ">of &nbsp; ₹ {{g.totalAmount}}</h4>
+                </div>
+            </div>
+        </div>
+        <a href="#positionWindow" data-role="image" data-inline="true" data-rel="popup" data-position-to="window" > 
+       <div style="float:left;width: 98%;font-family:Helvetica Neue Light;margin-left:3px;margin-right:3px;margin-bottom:3px;border-radius:7px;background-image: url(images/GoalList/goalacheived.png);background-size:cover;background-repeat:no-repeat;color:white;" ng-repeat="g in goals">
+            <div style="float:left;padding-left:10px;margin-top:-2%">
+                <div style="float:left;">
+                    <h3  style="font-weight: 400">{{g.goalTriptxt2}}</h3>
+                </div>
+                <div style="float:left;">
+                    <p style="margin-left: 15px; color: white; margin-right: 20px; margin-bottom: 20px; font-weight: 100; margin-top: 25px; font-size: 12px">{{g.goalTrip2startDate}}-{{g.goalTrip2endDate}}</p>
+                </div>
+            </div>
+            <div style="float:left;width:100%;">
+                <div style="float: left;    margin-bottom: -12%;    padding-left: 10px; margin-top: -5px;" ng-repeat="g in goals">
+                    <p style="font-weight: 100; font-size: 35px">₹ {{g.goalpoint}}</p>
+                </div>
+                <div style="float:left;">
+                    <h4 style="margin-left: 20px; margin-right: 20px; margin-bottom: 20px; font-weight: bolder; margin-top: 18px; font-size: 15px;font-family:Helvetica Neue ">.</h4>
+                </div>
+            </div>
+        </div></a>
+        <!-- ----------------dialog---------------- -->
+        <div data-role="popup" id="positionWindow" class="ui-content" data-theme="d" style="padding-top: 10%;background-image:url(images/planter/Misc/Confetti.png);background-size:contain;background-repeat:no-repeat; font-family:Helvetica Neue Light;">
+                        <div style="text-align:center;">
+                            <img border="0" src="images/planter/Misc/ribbon.png" width="100" height="100" style="width:100%;">
+                            <p style=" position: absolute;top: 10%; left: 33.5%;font-size: 18px;color: #fff;font-size: 22px;font-weight: inherit;">The Planter</p>
+                        </div>
+                        <div style="text-align:center;">
+                            <img border="0" src="images/planter/Misc/Badge.png" width="100" height="100" style="width: 60%;height: 40%;">
+                        </div>
+                        <div class="popuptext">
+                            <p>Congrats! New level achieved</p>
+                        </div>
+                        <div style="margin-top:20px;text-align:center;">
+                           <input type="image" name="facebook" src="images/facebook.png" alt="facebook">
+                           <input type="image" name="twitter" src="images/Twitter.png" alt="twitter" style="margin-left:15px;">
+                           <input type="image" name="googleplus" src="images/googleplus.png" alt="google" style="margin-left:15px;">
+                        </div> 
+               </div>
+               <!-- ----------------dialog---------------- -->
+               
+        <div style="float:left;width: 98%;font-family:Helvetica Neue Light;margin-left:3px;margin-right:3px;margin-bottom:3px;border-radius:7px;background-image: url(images/GoalList/goalacheived.png);background-size:cover;background-repeat:no-repeat;color:white;"ng-repeat="g in goals">
+            <div style="float:left;padding-left:10px;margin-top:-2%">
+                <div style="float:left;">
+                    <h3  style="font-weight: 400">{{g.goalTriptxt3}}</h3>
+                </div>
+                <div style="float:left;">
+                    <p style="margin-left: 15px; color: white; margin-right: 20px; margin-bottom: 20px; font-weight: 100; margin-top: 25px; font-size: 12px">{{g.goalTrip3startDate}}-{{g.goalTrip3endDate}}</p>
+                </div>
+            </div>
+            <div style="float:left;width:100%;">
+                <div style="float: left;    margin-bottom: -12%;    padding-left: 10px;    margin-top: -5px;">
+                    <p style="font-weight: 100; font-size: 35px">₹ {{g.totalAmount}}</p>
+                </div>
+                <div style="float:left;">
+                    <h4 style="margin-left: 20px; margin-right: 20px; margin-bottom: 20px; font-weight: bolder; margin-top: 18px; font-size: 15px;font-family:Helvetica Neue ">.</h4>
+                </div>
+            </div>
+        </div>
+     
+            	
+           </div>
+      
+        <!-- /content -->
+        <div data-role="panel" id="left-panel"  data-display="overlay" data-theme="b" style="background-color: #45544f;padding: 0px;overflow:hidden;">
+           
+           <div class="profilebackgroundSlide" ng-repeat="g in goals">
+            <div class="container">
+                <!-- <div class="ribbon">
+                    <img src="images/ribbon.png" class="img-responsive" />
+                    <p class="acclevel">The Planter</p>
+                </div> -->
+                <center>
+                   <a href="#planterpage"> <img src="images/user.png" class="img-responsive" style="width:100px;height:50;" /></a>
+                    <h2 style="color:#fff;font-weight:100"><center style="font-size: 20px;">{{g.userName}}</center></h2>
+                </center>
+            </div>
+            <div class="row" style="border-top:1px dotted #fff;border-bottom:1px dotted #fff">
+                <div class="col-xs-4">
+                    <div>
+                        <center>
+                            <li><img src="images/planter/Icons/ic_bundle.png" style="width:18px" /></li>
+                            <li style="color:#3c924c">₹ {{g.saved}}</li>
+                            <li style="color:#5b6f68;    font-size: 12px;">saved</li>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div>
+                        <center>
+                            <li><img src="images/planter/Icons/ic_points.png" style="width:25px" /></li>
+                            <li style="color:#3c924c">₹ {{g.point}}</li>
+                            <li style="color:#5b6f68;    font-size: 12px;">Points</li>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div>
+                        <center>
+                            <li><img src="images/planter/Icons/ic_trees.png" style="width:23px" /></li>
+                            <li style="color:#3c924c">{{g.forests}}</li>
+                            <li style="color:#5b6f68;    font-size: 12px;">Forests</li>
+                        </center>
+                    </div>
+                </div>
+            </div>
+			
+				<div class="row" style="padding:10px 10px 10px 25px;font-family:Helvetica Neue Light;">
+              
+             	<table style="width:100%;">
+					<tbody style="color:white;">
+						<tr >
+							<td style="padding:10px;     width: 10%;"><img src="images/planter/Icons/ic_dash.png" style="    width: 25px;" /></td>
+							<td><a href="#goals16">Overview</a></td>
+						</tr >
+						<tr>
+							<td style="padding:10px;     width: 10%;"><img src="images/planter/Icons/ic_goal.png" style="    width: 25px;" /></td>
+							<td><a href="#goals"> Goals</a></td>
+						</tr>
+						<tr >
+							<td style="padding:  10px 10px 10px 17px;color:blue;width: 10%;"><img src="images/planter/Icons/ic_journey.png" style="   width: 7px;
+                         	height: 25px" /></td>
+							<td onclick="alert('This feature will be available soon');">Journey</td>
+						</tr>
+						<tr >
+							<td style="padding:10px;    width: 10%;"><img src="images/planter/Icons/ic_gear.png" style="   width: 25px;      " /></td>
+							<td><a href="#setting">Settings</a></td>
+						</tr>
+						<tr >
+							<td style="padding:10px;    width: 10%;"><img src="images/planter/Icons/ic_share.png" style="    width: 25px;" /></td>
+							<td><a href="https://www.facebook.com">Share</a></td>
+						</tr>
+					</tbody>
+				</table>
+             </div>
+             <div class="row" style=" margin-top: 20%; padding: 10px;">
+                  <div style="float:left;padding:15px">
+                     <p style=" text-shadow: 0 0px 0 transparent;color:#bbb">About</p>
+                  
+                  </div>
+             
+                 <div style="float:right;padding:15px">
+                     <p  style=" text-shadow: 0 0px 0 transparent;color:#bbb">Logout</p>
+                  
+                  </div>
+             </div>
+             
+            
+        </div>
+       
+        
+        <!-- /panel -->
+
+    </div>
+    
+    
+</div>
+<div id="planterpage" data-role="page">
+        <div class="profilebackground">
+            <div class="container">
+                <div class="ribbon">
+                    <img src="images/ribbon.png" class="img-responsive" />
+                    <p class="acclevel">The Planter</p>
+                </div>
+                <center>
+                    <img src="images/user.png" class="img-responsive" style="width:100px;height:50;" />
+                    <span class="badge" style="background:none;position:fixed;top:28%;right:34%"><img src="images/Badge.png" class="responsive" style="width:24px;height:24px;"/></span>
+
+                    <h2 style="color:#fff;font-weight:100"><center>John Smith</center></h2>
+                </center>
+            </div>
+            <div class="row" style="border-top:1px dotted #fff">
+                <div class="col-xs-4">
+                    <div>
+                        <center>
+                            <li><img src="images/ic_bundle.png" style="width:18px" /></li>
+                            <li style="color:#fff">7500</li>
+                            <li style="color:#fff">saved</li>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div>
+                        <center>
+                            <li><img src="images/ic_points.png" style="width:18px" /></li>
+                            <li style="color:#fff">2000</li>
+                            <li style="color:#fff">Points</li>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div>
+                        <center>
+                            <li><img src="images/ic_trees.png" style="width:18px" /></li>
+                            <li style="color:#fff">2</li>
+                            <li style="color:#fff">Forests</li>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="achivements" style="padding:10px">
+            <center><span style="font-style:10px;letter-spacing:10px;font-weight:bold;color:#6D6D6D">ACHIVEMENTS</span></center>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-xs-4">
+                    <img src="images/planter_icon.png" style="width:75px" />
+                </div>
+                <div class="col-xs-4">
+                    <img src="images/first_grand.png" style="width:75px;height:75px; " />
+                </div>
+                <div class="col-xs-4">
+                    <img src="images/nature_lover.png" style="width:75px" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+	<!-- -------------End of Goals of VD Page 17-------------- -->
+	
+	<!-- Start of new Goals -->
+	<div id="newgoals" data-role="page" data-ng-init="fetchnewgoalDetails()">
+		   <div class="header">
+           <table style="width: 100%;">
+                <tbody><tr>
+                    <td width="10%" style="padding-bottom: 5px;">
+                        <img border="0" src="images/planter/Icons/ic_close.png" style="padding:3px" width="20" height="20" onclick="window.history.back();">
+                    </td>
+                     <td class="textheader1">
+                        <label id="label4">NEW GOAL</label>
+                    </td>
+                    <td width="10%" style=" padding-bottom: 5px;">
+                        <a href="#goals8"><img border="0" src="images/planter/Icons/ic_tick.png" width="20" height="20" style="padding:3px" ></a>
+                    </td>
+                   </tr>
+               </tbody>
+            </table>
+        </div>
+
+        <div data-role="content">
+             <p id="goaldetails">Goal Details</p>
+        </div>
+        <div class="col-xs-12 maindiv"  >
+            <div class="col-xs-2 imgdiv">
+                    <img border="0" src="images/planter/Icons/ic_goal.png" width="50%" height="60%">
+            </div>
+            <div class="col-xs-6 datadiv" >Goal Name</div>
+            <div class="col-xs-4 lastdatadiv"  ng-repeat="y in newgoal">
+               <span>{{y.goalTriptxt}}</span>
+            </div>
+        </div>
+         <div class="col-xs-12 maindiv">
+            <div class="col-xs-2 imgdiv">
+                     <img border="0" src="images/planter/Icons/ic_rupee.png" width="50%" height="60%">
+            </div>
+            <div class="col-xs-6 datadiv">Amount</div>
+            <div class="col-xs-4 lastdatadiv" ng-repeat ="y in newgoal">
+               <span>₹{{y.goalAmountRupee}}</span>
+            </div>
+        </div>
+        <div class="col-xs-12 maindiv">
+            <div class="col-xs-2 imgdiv">
+                     <img border="0" src="images/planter/Icons/ic_cal.png" width="50%" height="60%">
+            </div>
+            <div class="col-xs-6 datadiv" >Due Date</div>
+            <div class="col-xs-4 lastdatadiv" ng-repeat="y in newgoal">
+               <span>{{y.goalDueDate}}</span>
+            </div>
+        </div>
+        <div class="col-xs-12 maindiv">
+            <div class="col-xs-2 imgdiv">
+                     <img border="0" src="images/planter/Icons/ic_user.png" width="50%" height="60%">
+            </div>
+            <div class="col-xs-4 datadiv" style=" margin-left: 10px;">Account</div>
+            <div class="col-xs-6 " style=" margin-top: 15px;float:right; text-align: right;font-size: 18px; margin-right: -15px;padding-left: 26px;">
+               <select id="Accchanger">
+                  <option value="value1">My Account</option>
+                  <option value="value2">7862345137</option>
+                  <option value="value3">1234567800</option>
+               </select>
+               <img border="0" src="images/planter/Icons/ic_next.png" class="myacc_selectimg">
+            </div>
+        </div>
+        <div class="col-xs-12 maindiv">
+            <div class="col-xs-2 imgdiv">
+                     <img border="0" src="images/planter/Icons/ic_alert.png" width="50%" height="60%"></div>
+            <div class="col-xs-6 datadiv" >Alert me! <img border="0" src="images/ic_help.png" width="10%" height="10%"> </div>
+            <div class="col-xs-4 lastdatadiv" >
+               <form id="flipform">
+                <select name="flip-1" id="flip-1" class="flipflop" data-role="slider" data-track-theme="e" data-mini="true">
+                     <option value="off"></option>
+                     <option value="on"></option>
+                </select>
+                </form>
+            </div>
+         </div>
+      
+         <div  class="col-xs-12 " id="alerttags">        
+                        <div style="padding:2%;">
+                             <span  id="rcorners1"  class="g_alert1" style="margin-left:5%;">
+                             <span><img border="0" src="images/planter/Icons/ic_food.png" width="10" height="10"></span> 
+                             <span>Dinning Out</span>
+                             </span>
+                             <span id="rcorners2" class="g_alert2" style="margin-left: 4%; margin-right: 1px; margin-bottom: 1px; margin-top: 1px">
+                             <span><img border="0" src="images/planter/Icons/ic_movies.png" width="10" height="10"></span> 
+                             <span>Movies</span>
+                             </span>
+                             <span id="rcorners3" class="g_alert3" style="margin-left: 4%; margin-right: 1px; margin-bottom: 1px; margin-top: 1px">
+                             <span><img border="0" src="images/planter/Icons/ic_fun.png" width="10" height="10"></span>
+                             <span>Recreations</span>
+                             </span>
+                        </div>
+                        <div style="padding:2%;">
+                             <span id="rcorners4" class="g_alert4" style="margin-left: 5%; margin-right: 1px; margin-bottom: 1px; margin-top: 1px">
+                             <span><img border="0" src="images/planter/Icons/ic_glass.png" width="10" height="10"></span> 
+                             <span>Liquor & Night club</span>
+                             </span>
+                             <span id="rcorners5" class="g_alert5" style="margin-left: 4%; margin-right: 1px; margin-bottom: 1px; margin-top: 1px">
+                             <span><img border="0" src="images/planter/Icons/ic_pc.png" width="10" height="10"></span> 
+                             <span>Personal Care</span>
+                             </span>
+                        </div>
+                        <div style="padding:2%;">
+                             <span id="rcorners6" class="g_alert6" style="margin-left:4%; margin-right: 1px; margin-bottom: 1px; margin-top: 1px">
+                             <span><img border="0" src="images/planter/Icons/ic_shopping_bag.png" width="10" height="10"></span> 
+                             <span>Shopping</span>
+                             </span>
+                             <span id="rcorners7" class="g_alert7" style="margin-left: 3%; margin-right: 1px; margin-bottom: 1px; margin-top: 1px">
+                             <span><img border="0" src="images/planter/Icons/ic_cart.png" width="10" height="10"></span> 
+                             <span>Daily Needs</span>
+                             </span>
+                             <span id="rcorners8" class="g_alert8" style="margin-left: 3%; margin-right: 1px; margin-bottom: 1px; margin-top: 1px">
+                             <span><img border="0" src="images/planter/Icons/ic_pointer.png" width="10" height="10"></span> 
+                             <span>Customs</span>
+                             </span>
+                        </div>
+          </div>
+          <div data-role="content">
+             <p id="goaldetails" style="margin-top:0px" >Saving Mode</p>
+          </div>
+
+          <div class="col-xs-12" style="background-color:white">
+              <div class="col-xs-12" style="text-align:right;    padding: 5% 0% 0% 0%;">
+                    <a href="#moderate"><img src="images/planter/Icons/ic_edit.png" style="width: 7%;"></a>
+              </div>
+              <div class="col-xs-12" style="padding-top:10px">
+                    <div class="col-xs-4" style="text-align: center;">
+                         <img id="lowimage" border="0" src="images/planter/Misc/Mode_Low.png" class="img-responsive" width="100" height="100"> <label id="label0">Low</label>
+                    </div>
+                    <div class="col-xs-4" style="text-align: center;">
+                         <img id="moderateimage" border="0" src="images/planter/Misc/Mode_Med.png" class="img-responsive" width="100" height="100"> <label id="label1">Moderate</label>
+                    </div>
+                    <div class="col-xs-4" style="text-align: center;">
+                          <img id="highimage" border="0" src="images/planter/Misc/Mode_High.png" class="img-responsive" width="100" height="100"> <label id="label2">High</label>
+                    </div>
+              </div>
+
+          </div>	
+	</div>
+<div data-role="page" id="goals16" style="background-image:url(images/img/Landing.png);width:100%;height:100%;background-size:cover;background-repeat: no-repeat;" data-ng-init="getaccountDetails()"
+	>
+	<table  style="margin-top:10%;width:100%" ng-repeat="y in accountdetails">
+	<tbody><tr><td width="12%">
+	<div class="backbtn">
+	<a href="#left-panel" data-theme="d">
+	<img border="0" src="images/logo/ic_menu_w.png"  class="menubtnimg"></a>
+</div></td>
+	<td align="center" style="color: #d6b874"> 
+	<div class="plantershadow" style="margin-left:-40px">
+	<table  style="width:100%">
+	<tbody><tr><td rowspan="2">
+	<img border="0" src="images/img/planter.png" width="100%" height="100%" class="planterimg">
+	</td>
+	<td class="plantertxt">The Planter</td></tr>
+	<tr><td class="point">
+	<span class="point3">{{y.usercurrentgoalpoint}}&nbsp;/<span class="point2">&nbsp;{{y.goallevel1point}}</span></td></tr>
+	</tbody></table>
+	</div>
+	</td>
+	<td width="12%" style="position: fixed;right: -3px;">
+	<div class ="editbtn">
+		<a href="#newgoals"><img border="0" src="images/logo/ic_add.png"  class="plusimg"></a>
+		</div>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+					
+        <div style="align:center" align="center" ng-repeat="y in accountdetails">
+            <h4 class="goatrip letterspace">{{y.accountName |uppercase}}</h4></div>
+     
+        <div class="row">
+        <center style="margin-top:7%"><span id="safetxt">Safe to spend </span></center>
+        <img src="images/img/Monkey_Home.png" id="monkeyhome" width="20%"/>
+        </div>
+
+            <div class="row" ng-repeat="y in accountdetails">
+            <p id="amt2">₹{{y.outofbalance}}</p>
+            </div>
+        <div class="ui-grid-solo" style="height:80px;" ng-repeat="y in accountdetails"><p id="outbal">out of balance <span style="color:#439DDD;font-size:15px">₹{{y.totalAmount}}</span>
+        </div>
+        <div class="ui-grid-b" style="margin-top: -5%; " ng-repeat="y in accountdetails">
+                <div class="ui-block-a" id="amt5">₹{{y.savings}}<br><span class="save">Savings</span></div>
+				<div class="ui-block-b"id="amt6">₹{{y.goals}}<br><span class="save">Goals</span></div>
+				<div class="ui-block-c" id="amt7">₹{{y.perday}}<br><span class="save">Per day</span></div>
+            </div>
+        <div style="position:absolute;bottom:0;right:0;left:0;padding:10px;" ng-repeat="y in accountdetails">
+         
+            <div class="ui-grid-d" style="height: 100%;vertical-align: baseline; border-bottom-color: gray; text-align: center">
+			<div class="ui-block-a" style="text-align: center;padding:2%; border-bottom-style: dashed; ">
+				<section id="sec1"><span class="point">₹{{y.goalavg1}}</span></section>
+				<img border="0" src="images/img/tree 1.png" width="100%" height="100%" id="tree1">
+			</div>
+			<div class="ui-block-b" style=" border-bottom-style: dashed; padding-top: 24%">
+			<section id="sec2"><span class="point">₹{{y.goalavg2}}</span></section>
+				<img border="0" src="images/img/bush1.png" width="40%" height="30%" id="bush1"></div>
+			<div class="ui-block-c" style=" border-bottom-style: dashed; text-align: center;padding-top:16%;">
+			<section id="sec3"><span class="point">₹{{y.goalavg3}}</span></section>
+				<img border="0" src="images/img/tree 1.png" width="40%" height="50%" id="tree3"></div>
+			<div class="ui-block-d" style=" border-bottom-style: dashed; text-align: center;padding-top:20%;">
+			<section id="sec4"><span class="point">₹{{y.goalavg4}}</span></section>
+				<img border="0" src="images/img/mushroom1.png" width="40%" height="40%" id="mushroom1"></div>
+			<div class="ui-block-e" style=" border-bottom-style: dashed; text-align: center;padding-top:5%;">
+			<section  id="sec5"><span class="point">₹{{y.goalavg5}}</span></section>
+				<img border="0" src="images/img/tree 1.png" width="80%" height="80%"  id="tree5"></div>
+			<div class="ui-block-a" id="tree19">19</div>
+			<div class="ui-block-b" id="bush20">20</div>
+			<div class="ui-block-c"id="tree21">21</div>
+			<div class="ui-block-d"id="tree22">22</div>
+			<div class="ui-block-e"id="tree23">23</div>
+		</div>
+        </div>
+        
+         <div data-role="panel" id="left-panel" data-theme="b"  data-display="overlay" style="background-color: #45544f;padding: 0px;overflow:hidden;">
+           
+           <div class="profilebackgroundSlide" ng-repeat="g in goals">
+            <div class="container">
+                <!-- <div class="ribbon">
+                    <img src="images/ribbon.png" class="img-responsive" />
+                    <p class="acclevel">The Planter</p>
+                </div> -->
+                <center>
+                   <a href="#planterpage"> <img src="images/user.png" class="img-responsive" style="width:100px;height:50;" /></a>
+                    <h2 style="color:#fff;font-weight:100"><center style="font-size: 20px;">{{g.userName}}</center></h2>
+                </center>
+            </div>
+            <div class="row" style="border-top:1px dotted #fff;border-bottom:1px dotted #fff">
+                <div class="col-xs-4">
+                    <div>
+                        <center>
+                            <li><img src="images/planter/Icons/ic_bundle.png" style="width:18px" /></li>
+                            <li style="color:#3c924c">₹ {{g.saved}}</li>
+                            <li style="color:#5b6f68;    font-size: 12px;">saved</li>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div>
+                        <center>
+                            <li><img src="images/planter/Icons/ic_points.png" style="width:25px" /></li>
+                            <li style="color:#3c924c">₹ {{g.point}}</li>
+                            <li style="color:#5b6f68;    font-size: 12px;">Points</li>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div>
+                        <center>
+                            <li><img src="images/planter/Icons/ic_trees.png" style="width:23px" /></li>
+                            <li style="color:#3c924c">{{g.forests}}</li>
+                            <li style="color:#5b6f68;    font-size: 12px;">Forests</li>
+                        </center>
+                    </div>
+                </div>
+            </div>
+			
+				<div class="row" style="padding:10px 10px 10px 25px;font-family:Helvetica Neue Light;">
+              
+             	<table style="width:100%;">
+					<tbody style="color:white;">
+						<tr >
+							<td style="padding:10px;     width: 10%;"><img src="images/planter/Icons/ic_dash.png" style="    width: 25px;" /></td>
+							<td><a href="#goals16">Overview</a></td>
+						</tr >
+						<tr>
+							<td style="padding:10px;     width: 10%;"><img src="images/planter/Icons/ic_goal.png" style="    width: 25px;" /></td>
+							<td><a href="#goals"> Goals</a></td>
+						</tr>
+						<tr >
+							<td style="padding:  10px 10px 10px 17px;color:blue;    width: 10%;"><img src="images/planter/Icons/ic_journey.png" style="   width: 7px;
+                         	height: 25px" /></td>
+							<td onclick="alert('This feature will be available soon');">Journey</td>
+						</tr>
+						<tr >
+							<td style="padding:10px;    width: 10%;"><img src="images/planter/Icons/ic_gear.png" style="   width: 25px;      " /></td>
+							<td><a href="#setting">Settings</a></td>
+						</tr>
+						<tr >
+							<td style="padding:10px;    width: 10%;"><img src="images/planter/Icons/ic_share.png" style="    width: 25px;" /></td>
+							<td><a href="https://www.facebook.com">Share</a></td>
+						</tr>
+					</tbody>
+				</table>
+             </div>
+             <div class="row" style=" margin-top: 20%; padding: 10px;">
+                  <div style="float:left;padding:15px">
+                     <p style=" text-shadow: 0 0px 0 transparent;color:#bbb">About</p>
+                  
+                  </div>
+             
+                 <div style="float:right;padding:15px">
+                     <p  style=" text-shadow: 0 0px 0 transparent;color:#bbb">Logout</p>
+                  
+                  </div>
+             </div>
+             
+            
+        </div>
+       
+        
+        <!-- /panel -->
+
+    </div>
+	</div>
+
+ <!--  Start of Crausal Screen -->
+
+
+    <div data-role="page" id="intro1" data-ng-init="fetchsettingDetails()">
+
+
+        <div style="background-color:black;position:fixed;font-family:Arial, sans-serif;width:100%;height:auto;">
+
+            <div id="jssor_1" style="position:fixed;width:417px;height:800px; top:0px; left:0px; overflow: hidden; visibility: hidden;transform: none;">
+             
+                <div data-u="slides" style="cursor: default; position: fixed; width:417px; height:800px;top:0px; left:0px; overflow: hidden;">
+                    <div >
+                        <img data-u="image" src="images/1.png" style="width: 100%;" />
+                        *<div style=" position: absolute;bottom: 20%;left:15%;color: #fff;line-height: 12px;text-align:center" ng-repeat="x in settings">
+                            <p id ="crausalTxt1">{{x.crausalTxt1}}</p>
+                        </div>
+
+                    </div>
+                    <div >
+                        <img data-u="image" src="images/2.png" style="width: 100%;"/>
+                        <div style=" position: absolute;bottom: 20%;left:15%;color: #ffffff;line-height: 12px; text-align:center" ng-repeat="x in settings">
+                            <p id="crausalTxt1">{{x.crausalTxt2}}</p>
+                        </div>
+                    </div>
+                    <div >
+                        <img data-u="image" src="images/3.png" style="width: 100%;"/>
+                        <div style=" position: absolute;bottom: 13%;left:15%;color: #ffffff;line-height: 12px; text-align:center">
+                            <p style="font-family:Helveticaneuethin;font-size:20px;letter-spacing:1px;">Now you can help the world with<br><br>your savings.<br><br>The more you save, the<br><br> better the world will become</p>
+                        </div>
+                    </div>
+
+                    <div >
+                        <img data-u="image" src="images/4.png" />
+
+                        <img src="images/City.png" style="position:absolute;top: 10%;left:25%;width:50%" />
+                        <a href="#goalstart"><img src="images/Forest.png" style="position:absolute;bottom:25%;left:25%;width:50%" /></a>
+                        <div style=" position: absolute;bottom: 15%;left: 30%;color: #ffffff;line-height: 10px; text-align:center"ng-repeat="x in settings">
+                            <p id="crausalTxt4">{{x.crausalTxt4}}</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- Bullet Navigator -->
+                <div data-u="navigator" class="jssorb05" style="top:20px;right:18px;" data-autocenter="1">
+                    <!-- bullet navigator item prototype -->
+                    <div data-u="prototype" style="width: 15px;height: 15px;position: absolute;left: 120px; /* top: 0px; */ opacity: 1;"></div>
+                </div>
+                <!-- Arrow Navigator -->
+
+            </div>
+        </div>
+
+    </div>
+    
+    <!--  End of Crausal Screen -->
+    <!-- -------setting -->
+	<div id="setting" data-role="page">
+		<div style="background-color:WHITE;padding-top:2px;">
+            <table style="background-color:WHITE;text-align: center;width:100%" >
+                <tr >
+                    <td width="25%">
+                         <div style="border:0.5px solid #f5e6ab border-left-style: none;padding: 5px;float:left;   border-top-right-radius: 5em;border-bottom-right-radius: 5em;box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);width: 40px;height: 40px; margin-left: -6px;">
+                           <a href="#left-panel" data-theme="d">
+                            <img border="0" src="images/planter/Icons/ic_menu.png" width="50%" height="50%" style=" margin-top: 10px;margin-left: -4px;"></a>
+                        </div>
+                    </td>
+                     <td style="letter-spacing:12px;text-align: center; font-weight: bold">
+                        <label id="label4" style="color: black">SETTINGS</label>
+                    </td>
+                    <td width="20%" >
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="margin:1%;">
+		<div data-role="content" style="padding:2%;">Personal Info</div>
+		<div class="ui-grid-b" style="width:100%;background-color: white;line-height:40px;">
+			<div class="ui-block-a" style="width:15%; text-align: center;padding-top:2%;">
+			<img border="0" src="images/planter/Icons/ic_user.png" width="50%" height="50%"></div>
+			<div class="ui-block-b" style="width:50%; text-align: left;padding: 2%;">Accounts</div>
+			<div class="ui-block-c" style="width:30%;float:right; text-align: right;padding: 2%;">
+				Manage
+				<img border="0" src="images/planter/Icons/ic_next.png" width="12" height="12" style="padding-left:2px;">
+			</div>
+		</div>
+		
+		<div class="ui-grid-b" style="width:100%;background-color: white;line-height:40px;margin-top:1%;">
+			<div class="ui-block-a" style="width:15%; text-align: center;padding-top:2%;">
+			<img border="0" src="images/planter/Icons/ic_lock.png" width="50%" height="50%"></div>
+			<div class="ui-block-b" style="width:50%; text-align: left;padding: 2%;">Password</div>
+			<div class="ui-block-c" style="padding: 2%;width:30%;float:right; text-align: right; vertical-align: middle">
+				Change
+				<img border="0" src="images/planter/Icons/ic_next.png" width="12" height="12" style="padding-left:2px;">
+			</div>
+		</div>
+		<div data-role="content" style="padding:2%;">Additional Settings</div>
+		<div class="ui-grid-b" style="width:100%;background-color: white;margin-top:2px;line-height:40px;">
+			<div class="ui-block-a" style="width:15%; text-align: center;padding-top:4%;">
+			<img border="0" src="images/planter/Icons/ic_alert.png" width="60%" height="60%"></div>
+			<div class="ui-block-b" style="width:50%; text-align: left;padding: 2%;">Alert me!
+			<img border="0" src="images/ic_help.png" width="10%" height="10%">
+			</div>
+			<div class="ui-block-c" style="width:30%;float:right; text-align: right;padding: 2%;">
+				<form style="float:right;">
+                <select name="flip-1" id="flip-1" class="flipflop" data-role="slider" data-track-theme="e" data-mini="true">
+		             <option value="off"></option>
+		             <option value="on"></option>
+		        </select>
+		        </form>
+			</div>
+		</div>
+		
+		<div class="ui-grid-b" style="width:100%;background-color: white;margin-top:1%;line-height:40px;">
+			<div class="ui-block-a" style="width:15%; text-align: center;padding-top:2%;">
+			<img border="0" src="images/planter/Icons/ic_savmode.png" width="60%" height="60%"></div>
+			<div class="ui-block-b" style="width:50%; text-align: left;padding: 2%;">Saving Mode</div>
+			<div class="ui-block-c" style="padding: 2%;width:20%;float:right; text-align: right;padding: 2%;">
+				
+				<img border="0" src="images/planter/Icons/ic_next.png" width="12" height="12" style="padding-left:2px;">
+			</div>
+		</div>
+		<div data-role="content" style="padding:2%;">About</div>
+		<div class="ui-grid-a" style="background-color: white; width: 100%; line-height: 50px">
+			<div class="ui-block-a" style="width:70%; text-align: left;padding: 2%;">Version</div>
+			<div class="ui-block-b" style="padding: 2%;width:25%;float:right; text-align: right;">v0.1b</div>
+		</div>
+		<div class="ui-grid-a" style="background-color: white; width: 100%;margin-top:1%; line-height: 50px">
+			<div class="ui-block-a" style="width:70%; text-align: left;padding: 2%;">What's new</div>
+			<div class="ui-block-b" style="padding: 2%;width:25%;float:right; text-align: right;padding: 2%;">
+			<img border="0" src="images/planter/Icons/ic_next.png" width="12" height="12" style="padding-left:2px;"></div>
+		</div>
+		<div class="ui-grid-a" style="background-color: white; width: 100%;margin-top:1%; line-height: 50px">
+			<div class="ui-block-a" style="width:70%; text-align: left;padding: 2%;">FAQs</div>
+			<div class="ui-block-b" style="padding: 2%;width:25%;float:right; text-align: right;padding: 2%;">
+			<img border="0" src="images/planter/Icons/ic_next.png" width="12" height="12" style="padding-left:2px;"></div>
+		</div>
+		<div class="ui-grid-a" style="background-color: white; width: 100%;margin-top:1%; line-height: 50px">
+			<div class="ui-block-a" style="width:70%; text-align: left;padding: 2%;">Terms of use</div>
+			<div class="ui-block-b" style="padding: 2%;width:25%;float:right; text-align: right;padding: 2%;">
+			<img border="0" src="images/planter/Icons/ic_next.png" width="12" height="12" style="padding-left:2px;"></div>
+		</div>
+    </div>
+    
+    <!-- --------------------drawer------------------ -->
+    <!-- /content -->
+        <div data-role="panel" id="left-panel" data-theme="b"  data-display="overlay" style="background-color: #45544f;padding: 0px;overflow:hidden;">
+           
+           <div class="profilebackgroundSlide" ng-repeat="g in goals">
+            <div class="container">
+                <!-- <div class="ribbon">
+                    <img src="images/ribbon.png" class="img-responsive" />
+                    <p class="acclevel">The Planter</p>
+                </div> -->
+                <center>
+                   <a href="#planterpage"> <img src="images/user.png" class="img-responsive" style="width:100px;height:50;" /></a>
+                    <h2 style="color:#fff;font-weight:100"><center style="font-size: 20px;">{{g.userName}}</center></h2>
+                </center>
+            </div>
+            <div class="row" style="border-top:1px dotted #fff;border-bottom:1px dotted #fff">
+                <div class="col-xs-4">
+                    <div>
+                        <center>
+                            <li><img src="images/planter/Icons/ic_bundle.png" style="width:18px" /></li>
+                            <li style="color:#3c924c">₹ {{g.saved}}</li>
+                            <li style="color:#5b6f68;    font-size: 12px;">saved</li>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div>
+                        <center>
+                            <li><img src="images/planter/Icons/ic_points.png" style="width:25px" /></li>
+                            <li style="color:#3c924c">₹ {{g.point}}</li>
+                            <li style="color:#5b6f68;    font-size: 12px;">Points</li>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div>
+                        <center>
+                            <li><img src="images/planter/Icons/ic_trees.png" style="width:23px" /></li>
+                            <li style="color:#3c924c">{{g.forests}}</li>
+                            <li style="color:#5b6f68;    font-size: 12px;">Forests</li>
+                        </center>
+                    </div>
+                </div>
+            </div>
+			
+				<div class="row" style="padding:10px 10px 10px 25px;font-family:Helvetica Neue Light;">
+              
+             	<table style="width:100%;">
+					<tbody style="color:white;">
+						<tr >
+							<td style="padding:10px;     width: 10%;"><img src="images/planter/Icons/ic_dash.png" style="    width: 25px;" /></td>
+							<td><a href="#goals16">Overview</a></td>
+						</tr >
+						<tr>
+							<td style="padding:10px;     width: 10%;"><img src="images/planter/Icons/ic_goal.png" style="    width: 25px;" /></td>
+							<td><a href="#goals"> Goals</a></td>
+						</tr>
+						<tr >
+							<td style="padding:  10px 10px 10px 17px;color:blue;    width: 10%;"><img src="images/planter/Icons/ic_journey.png" style="   width: 7px;
+                         	height: 25px" /></td>
+							<td onclick="alert('This feature will be available soon');">Journey</td>
+						</tr>
+						<tr >
+							<td style="padding:10px;    width: 10%;"><img src="images/planter/Icons/ic_gear.png" style="   width: 25px;      " /></td>
+							<td><a href="#setting">Settings</a></td>
+						</tr>
+						<tr >
+							<td style="padding:10px;    width: 10%;"><img src="images/planter/Icons/ic_share.png" style="    width: 25px;" /></td>
+							<td><a href="https://www.facebook.com">Share</a></td>
+						</tr>
+					</tbody>
+				</table>
+             </div>
+             <div class="row" style=" margin-top: 20%; padding: 10px;">
+                  <div style="float:left;padding:15px">
+                     <p style=" text-shadow: 0 0px 0 transparent;color:#bbb">About</p>
+                  
+                  </div>
+             
+                 <div style="float:right;padding:15px">
+                     <p  style=" text-shadow: 0 0px 0 transparent;color:#bbb">Logout</p>
+                  
+                  </div>
+             </div>
+             
+            
+        </div>
+       
+        
+        <!-- /panel -->
+
+    </div>
+	</div>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+	
+	<script src="js/initOptions.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/messages.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,178 @@
+@CHARSET "ISO-8859-1";
+ /* New Goal CSS*/
+ .header {
+	background-color: rgb(255, 255, 255);
+	position: fixed;
+	padding-bottom: 2px;
+	padding: 14px 5px 10px 5px;
+	width:100%;
+	top: 0px;
+	height:50px !important;
+	text-align: center;
+	box-shadow: 1px 1px 1px #ddd;
+	z-index: 1;
+    }
+#goaldetails{
+    font-size: 15px;
+    color: #9b9b9b;
+    margin-top:15%;
+    margin-bottom: 0px;
+    font-family: Helvetica Neue Light;       
+}
+
+ .maindiv{
+     width:100%;
+     border-bottom:1px solid #E7E5E5;
+     background-color: white;
+     line-height:60px;
+ }
+ .imgdiv{
+ 	 width:16%; text-align: center;padding:5px;float:left
+  }
+ .datadiv{
+     text-align: left;
+     color: #9B9B9B;
+     font-family:Helvetica Neue Regular;
+     font-size: 18px; 
+     margin-top: 5px;
+   }
+ .lastdatadiv{
+     margin-right:2px;
+     float:right;
+     padding-right:4px;
+     text-align: right;
+     font-size: 18px;
+     }
+#flipform{
+    float: right; right: 10px;position: absolute;padding-top: 10px;
+   }
+.textheader1 {
+    letter-spacing: 10px;
+    word-spacing: 5px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+  }
+ 
+/*--------------------------goal alert----------------------------*/
+
+#alerttags{
+    margin-top: -2px;
+    padding: 2% 5% 4% 10%;;
+    background-image: url(images/goalfade.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 100%;
+    background-color: white;
+}
+
+         #rcorners1 {
+            border-radius: 50px;
+            border: 1px solid #facf85;
+            padding: 2%;
+            width: 40%;
+            height: 5%;
+            font-size: 11px;
+        }
+        
+        #rcorners2 {
+            border-radius: 50px;
+            border: 1px solid #69a6d8;
+            padding: 2%;
+            width: 40%;
+            height: 5%;
+            font-size: 11px;
+        }
+        
+        #rcorners3 {
+            border-radius: 50px;
+            border: 1px solid #f69ab5;
+            padding: 2%;
+            width: 40%;
+            height: 5%;
+            font-size: 11px;
+        }
+        
+        #rcorners4 {
+            border-radius: 50px;
+            border: 1px solid #c67396;
+            padding: 2%;
+            width: 40%;
+            height: 5%;
+            font-size: 11px;
+        }
+        
+        #rcorners5 {
+            border-radius: 50px;
+            border: 1px solid #a971c3;
+            padding: 2%;
+            width: 40%;
+            height: 5%;
+            font-size: 11px;
+        }
+        
+        #rcorners6 {
+            border-radius: 50px;
+            border: 2px solid #ffd1bd;
+            padding: 2%;
+            width: 40%;
+            height: 4%;
+            font-size: 11px;
+        }
+        
+        #rcorners7 {
+            border-radius: 50px;
+            border: 2px solid #86cb8c;
+            padding: 2%;
+            width: 40%;
+            height: 4%;
+            font-size: 11px;
+        }
+        
+        #rcorners8 {
+            border-radius: 50px;
+            border: 2px solid #d49785;
+            padding: 2%;
+            width: 50%;
+            height: 4%;
+            font-size: 11px;
+        }
+        
+        .g_alert1{
+        background-color:#facf85;
+        color:#ffffff;
+       }
+       
+       .g_alert2{
+        background-color:#69a6d8;
+        color:#ffffff;
+       }
+       
+       .g_alert3{
+        background-color:#f69ab5;
+        color:#ffffff;
+       }
+       
+       .g_alert4{
+        background-color:#c67396;
+        color:#ffffff;
+       }
+       
+       .g_alert5{
+        background-color:#a971c3;
+        color:#ffffff;
+       }
+       
+       .g_alert6{
+        background-color:#ffd1bd;
+        color:#ffffff;
+       }
+       .g_alert7{
+        background-color:#86cb8c;
+        color:#ffffff;
+       }
+        .g_alert8{
+        background-color:#d49785;
+        color:#ffffff;
+       }
